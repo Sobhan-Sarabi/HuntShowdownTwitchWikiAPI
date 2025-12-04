@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Collections.ObjectModel;
 using Microsoft.Data.Sqlite;
 
 namespace HuntShowdownTwitchWikiAPI.src
@@ -19,16 +19,18 @@ namespace HuntShowdownTwitchWikiAPI.src
 
     private void EnsureCreated()
     {
-      // Just opening this path will create the file if it doesn’t exist
       using var connection = new SqliteConnection(_connectionString);
       connection.Open();
 
       var cmd = connection.CreateCommand();
       cmd.CommandText = @"
 CREATE TABLE IF NOT EXISTS Weapons (
-    Weapon           TEXT PRIMARY KEY,
+    FullWeaponName   TEXT PRIMARY KEY,
+    WeaponAugment    TEXT,
+    WeaponBase       TEXT,
+    AmmoType         TEXT,
     Size             TEXT,
-    SpecialAmmoType  TEXT,
+    SpecialType      TEXT,
     GeneralAmmoType  TEXT,
     Price            TEXT,
     Damage           TEXT,
@@ -42,11 +44,19 @@ CREATE TABLE IF NOT EXISTS Weapons (
     ReloadSpeed      TEXT,
     Loaded           TEXT,
     Extra            TEXT,
-    AmmoType         TEXT,
     Note             TEXT
+);
+
+CREATE TABLE IF NOT EXISTS Traits (
+    Name    TEXT PRIMARY KEY,
+    Cost    TEXT,
+    Unlock  TEXT,
+    Type    TEXT,
+    Effect  TEXT
 );";
       cmd.ExecuteNonQuery();
     }
+
 
     public bool HasAnyWeapons()
     {
@@ -74,20 +84,57 @@ CREATE TABLE IF NOT EXISTS Weapons (
 
         cmd.CommandText = @"
 INSERT INTO Weapons (
-    Weapon, Size, SpecialAmmoType, GeneralAmmoType, Price, Damage, DropRange,
-    MuzzleVelocity, VerticalRecoil, RateOfFire, CycleTime, Spread, Sway,
-    ReloadSpeed, Loaded, Extra, AmmoType, Note
+    FullWeaponName,
+    WeaponAugment,
+    WeaponBase,
+    AmmoType,
+    Size,
+    SpecialType,
+    GeneralAmmoType,
+    Price,
+    Damage,
+    DropRange,
+    MuzzleVelocity,
+    VerticalRecoil,
+    RateOfFire,
+    CycleTime,
+    Spread,
+    Sway,
+    ReloadSpeed,
+    Loaded,
+    Extra,
+    Note
 ) VALUES (
-    $Weapon, $Size, $SpecialAmmoType, $GeneralAmmoType, $Price, $Damage, $DropRange,
-    $MuzzleVelocity, $VerticalRecoil, $RateOfFire, $CycleTime, $Spread, $Sway,
-    $ReloadSpeed, $Loaded, $Extra, $AmmoType, $Note
+    $FullWeaponName,
+    $WeaponAugment,
+    $WeaponBase,
+    $AmmoType,
+    $Size,
+    $SpecialType,
+    $GeneralAmmoType,
+    $Price,
+    $Damage,
+    $DropRange,
+    $MuzzleVelocity,
+    $VerticalRecoil,
+    $RateOfFire,
+    $CycleTime,
+    $Spread,
+    $Sway,
+    $ReloadSpeed,
+    $Loaded,
+    $Extra,
+    $Note
 )
-ON CONFLICT(Weapon) DO NOTHING;  -- don’t overwrite if it’s already there
+ON CONFLICT(FullWeaponName) DO NOTHING;  -- don’t overwrite if it’s already there
 ";
 
-        cmd.Parameters.AddWithValue("$Weapon", w.Weapon ?? "");
+        cmd.Parameters.AddWithValue("$FullWeaponName", w.FullWeaponName ?? "");
+        cmd.Parameters.AddWithValue("$WeaponAugment", w.WeaponAugment ?? "");
+        cmd.Parameters.AddWithValue("$WeaponBase", w.WeaponBase ?? "");
+        cmd.Parameters.AddWithValue("$AmmoType", w.AmmoType ?? "");
         cmd.Parameters.AddWithValue("$Size", w.Size ?? "");
-        cmd.Parameters.AddWithValue("$SpecialAmmoType", w.SpecialAmmoType ?? "");
+        cmd.Parameters.AddWithValue("$SpecialType", w.SpecialType ?? "");
         cmd.Parameters.AddWithValue("$GeneralAmmoType", w.GeneralAmmoType ?? "");
         cmd.Parameters.AddWithValue("$Price", w.Price ?? "");
         cmd.Parameters.AddWithValue("$Damage", w.Damage ?? "");
@@ -101,7 +148,6 @@ ON CONFLICT(Weapon) DO NOTHING;  -- don’t overwrite if it’s already there
         cmd.Parameters.AddWithValue("$ReloadSpeed", w.ReloadSpeed ?? "");
         cmd.Parameters.AddWithValue("$Loaded", w.Loaded ?? "");
         cmd.Parameters.AddWithValue("$Extra", w.Extra ?? "");
-        cmd.Parameters.AddWithValue("$AmmoType", w.AmmoType ?? "");
         cmd.Parameters.AddWithValue("$Note", w.Note ?? "");
 
         cmd.ExecuteNonQuery();
@@ -110,14 +156,14 @@ ON CONFLICT(Weapon) DO NOTHING;  -- don’t overwrite if it’s already there
       transaction.Commit();
     }
 
-    public WeaponData? GetWeapon(string weaponName)
+    public WeaponData? GetWeapon(string fullWeaponName)
     {
       using var connection = new SqliteConnection(_connectionString);
       connection.Open();
 
       var cmd = connection.CreateCommand();
-      cmd.CommandText = "SELECT * FROM Weapons WHERE Weapon = $Weapon;";
-      cmd.Parameters.AddWithValue("$Weapon", weaponName);
+      cmd.CommandText = "SELECT * FROM Weapons WHERE FullWeaponName = $FullWeaponName;";
+      cmd.Parameters.AddWithValue("$FullWeaponName", fullWeaponName);
 
       using var reader = cmd.ExecuteReader();
       if (!reader.Read())
@@ -125,24 +171,204 @@ ON CONFLICT(Weapon) DO NOTHING;  -- don’t overwrite if it’s already there
 
       return new WeaponData
       {
-        Weapon = reader["Weapon"].ToString(),
-        Size = reader["Size"].ToString(),
-        SpecialAmmoType = reader["SpecialAmmoType"].ToString(),
-        GeneralAmmoType = reader["GeneralAmmoType"].ToString(),
-        Price = reader["Price"].ToString(),
-        Damage = reader["Damage"].ToString(),
-        DropRange = reader["DropRange"].ToString(),
-        MuzzleVelocity = reader["MuzzleVelocity"].ToString(),
-        VerticalRecoil = reader["VerticalRecoil"].ToString(),
-        RateOfFire = reader["RateOfFire"].ToString(),
-        CycleTime = reader["CycleTime"].ToString(),
-        Spread = reader["Spread"].ToString(),
-        Sway = reader["Sway"].ToString(),
-        ReloadSpeed = reader["ReloadSpeed"].ToString(),
-        Loaded = reader["Loaded"].ToString(),
-        Extra = reader["Extra"].ToString(),
-        AmmoType = reader["AmmoType"].ToString(),
-        Note = reader["Note"].ToString()
+        FullWeaponName = reader["FullWeaponName"]?.ToString(),
+        WeaponAugment = reader["WeaponAugment"]?.ToString(),
+        WeaponBase = reader["WeaponBase"]?.ToString(),
+        AmmoType = reader["AmmoType"]?.ToString(),
+        Size = reader["Size"]?.ToString(),
+        SpecialType = reader["SpecialType"]?.ToString(),
+        GeneralAmmoType = reader["GeneralAmmoType"]?.ToString(),
+        Price = reader["Price"]?.ToString(),
+        Damage = reader["Damage"]?.ToString(),
+        DropRange = reader["DropRange"]?.ToString(),
+        MuzzleVelocity = reader["MuzzleVelocity"]?.ToString(),
+        VerticalRecoil = reader["VerticalRecoil"]?.ToString(),
+        RateOfFire = reader["RateOfFire"]?.ToString(),
+        CycleTime = reader["CycleTime"]?.ToString(),
+        Spread = reader["Spread"]?.ToString(),
+        Sway = reader["Sway"]?.ToString(),
+        ReloadSpeed = reader["ReloadSpeed"]?.ToString(),
+        Loaded = reader["Loaded"]?.ToString(),
+        Extra = reader["Extra"]?.ToString(),
+        Note = reader["Note"]?.ToString()
+      };
+    }
+
+    public Collection<WeaponData> GetWeaponsByAugment(string weaponAugment)
+    {
+      var results = new Collection<WeaponData>();
+
+      using var connection = new SqliteConnection(_connectionString);
+      connection.Open();
+
+      var cmd = connection.CreateCommand();
+      cmd.CommandText = @"
+    SELECT * 
+    FROM Weapons 
+    WHERE WeaponAugment = $WeaponAugment COLLATE NOCASE;
+  ";
+      cmd.Parameters.AddWithValue("$WeaponAugment", weaponAugment);
+
+      using var reader = cmd.ExecuteReader();
+      while (reader.Read())
+      {
+        results.Add(new WeaponData
+        {
+          FullWeaponName = reader["FullWeaponName"]?.ToString(),
+          WeaponAugment = reader["WeaponAugment"]?.ToString(),
+          WeaponBase = reader["WeaponBase"]?.ToString(),
+          AmmoType = reader["AmmoType"]?.ToString(),
+          Size = reader["Size"]?.ToString(),
+          SpecialType = reader["SpecialType"]?.ToString(),
+          GeneralAmmoType = reader["GeneralAmmoType"]?.ToString(),
+          Price = reader["Price"]?.ToString(),
+          Damage = reader["Damage"]?.ToString(),
+          DropRange = reader["DropRange"]?.ToString(),
+          MuzzleVelocity = reader["MuzzleVelocity"]?.ToString(),
+          VerticalRecoil = reader["VerticalRecoil"]?.ToString(),
+          RateOfFire = reader["RateOfFire"]?.ToString(),
+          CycleTime = reader["CycleTime"]?.ToString(),
+          Spread = reader["Spread"]?.ToString(),
+          Sway = reader["Sway"]?.ToString(),
+          ReloadSpeed = reader["ReloadSpeed"]?.ToString(),
+          Loaded = reader["Loaded"]?.ToString(),
+          Extra = reader["Extra"]?.ToString(),
+          Note = reader["Note"]?.ToString()
+        });
+      }
+
+      return results;
+    }
+
+    public WeaponData? GetWeaponByKey(IReadOnlyList<string> keyParts)
+    {
+      if (keyParts == null || keyParts.Count != 3)
+        throw new ArgumentException("Expected 3 elements: [WeaponAugment, WeaponBase, AmmoType]", nameof(keyParts));
+
+      var augment = keyParts[1] ?? "";
+      var weaponBase = keyParts[0] ?? "";
+      var ammoType = keyParts[2] ?? "";
+
+      using var connection = new SqliteConnection(_connectionString);
+      connection.Open();
+
+      var cmd = connection.CreateCommand();
+      cmd.CommandText = @"
+        SELECT *
+        FROM Weapons
+        WHERE WeaponAugment = $WeaponAugment
+          AND WeaponBase    = $WeaponBase
+          AND AmmoType      = $AmmoType;
+    ";
+
+      cmd.Parameters.AddWithValue("$WeaponAugment", augment);
+      cmd.Parameters.AddWithValue("$WeaponBase", weaponBase);
+      cmd.Parameters.AddWithValue("$AmmoType", ammoType);
+
+      using var reader = cmd.ExecuteReader();
+      if (!reader.Read())
+        return null;
+
+      WeaponData weaponData = new WeaponData
+      {
+        FullWeaponName = reader["FullWeaponName"]?.ToString(),
+        WeaponAugment = reader["WeaponAugment"]?.ToString(),
+        WeaponBase = reader["WeaponBase"]?.ToString(),
+        AmmoType = reader["AmmoType"]?.ToString(),
+        Size = reader["Size"]?.ToString(),
+        SpecialType = reader["SpecialType"]?.ToString(),
+        GeneralAmmoType = reader["GeneralAmmoType"]?.ToString(),
+        Price = reader["Price"]?.ToString(),
+        Damage = reader["Damage"]?.ToString(),
+        DropRange = reader["DropRange"]?.ToString(),
+        MuzzleVelocity = reader["MuzzleVelocity"]?.ToString(),
+        VerticalRecoil = reader["VerticalRecoil"]?.ToString(),
+        RateOfFire = reader["RateOfFire"]?.ToString(),
+        CycleTime = reader["CycleTime"]?.ToString(),
+        Spread = reader["Spread"]?.ToString(),
+        Sway = reader["Sway"]?.ToString(),
+        ReloadSpeed = reader["ReloadSpeed"]?.ToString(),
+        Loaded = reader["Loaded"]?.ToString(),
+        Extra = reader["Extra"]?.ToString(),
+        Note = reader["Note"]?.ToString()
+      };
+
+      return weaponData;
+    }
+
+    public bool HasAnyTraits()
+    {
+      using var connection = new SqliteConnection(_connectionString);
+      connection.Open();
+
+      var cmd = connection.CreateCommand();
+      cmd.CommandText = "SELECT 1 FROM Traits LIMIT 1;";
+
+      using var reader = cmd.ExecuteReader();
+      return reader.Read();
+    }
+
+    public void BulkUpsertTraits(IEnumerable<TraitData> traits)
+    {
+      using var connection = new SqliteConnection(_connectionString);
+      connection.Open();
+
+      using var transaction = connection.BeginTransaction();
+
+      foreach (var t in traits)
+      {
+        var cmd = connection.CreateCommand();
+        cmd.Transaction = transaction;
+
+        cmd.CommandText = @"
+INSERT INTO Traits (
+    Name,
+    Cost,
+    Unlock,
+    Type,
+    Effect
+) VALUES (
+    $Name,
+    $Cost,
+    $Unlock,
+    $Type,
+    $Effect
+)
+ON CONFLICT(Name) DO NOTHING;
+";
+
+        cmd.Parameters.AddWithValue("$Name", t.Name ?? "");
+        cmd.Parameters.AddWithValue("$Cost", t.Cost ?? "");
+        cmd.Parameters.AddWithValue("$Unlock", t.Unlock ?? "");
+        cmd.Parameters.AddWithValue("$Type", t.Type ?? "");
+        cmd.Parameters.AddWithValue("$Effect", t.Effect ?? "");
+
+        cmd.ExecuteNonQuery();
+      }
+
+      transaction.Commit();
+    }
+
+    public TraitData? GetTrait(string name)
+    {
+      using var connection = new SqliteConnection(_connectionString);
+      connection.Open();
+
+      var cmd = connection.CreateCommand();
+      cmd.CommandText = "SELECT * FROM Traits WHERE Name = $Name;";
+      cmd.Parameters.AddWithValue("$Name", name);
+
+      using var reader = cmd.ExecuteReader();
+      if (!reader.Read())
+        return null;
+
+      return new TraitData
+      {
+        Name = reader["Name"]?.ToString(),
+        Cost = reader["Cost"]?.ToString(),
+        Unlock = reader["Unlock"]?.ToString(),
+        Type = reader["Type"]?.ToString(),
+        Effect = reader["Effect"]?.ToString()
       };
     }
   }

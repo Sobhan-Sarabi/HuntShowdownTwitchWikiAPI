@@ -1,87 +1,38 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Drawing;
 using System.IO;
-using System.Text.RegularExpressions;
+using System.Linq;
 using System.Reflection;
+using System.Text.RegularExpressions;
 
 namespace HuntShowdownTwitchWikiAPI.src
 {
-  static public class Parser
+  public class Parser
   {
-    private static readonly Dictionary<string, string> weaponTranslationTable =
-    new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
-    {
-      { "Carbine", "1865 Carbine" },
-      { "Auto 5", "Auto-5"},
-      { "Crown and king", "Auto-5" },
-      { "Berthier", "Berthier 1892" },
-      { "Bornheim", "Bornheim No. 3" },
-      { "centenial", "Centennial" },
-      { "Dolch", "Dolch 96" },
-      { "Frontier", "Frontier 73C" },
-      { "Homestead", "Homestead 78" },
-      { "Bow", "Hunting Bow" },
-      { "Infantry", "Infantry 73L" },
-      { "Lemat", "LeMat" },
-      { "Lebel", "Lebel 1886" },
-      { "Mako", "Mako 1895" },
-      { "Martini", "Martini-Henry" },
-      { "Maynard", "Maynard Sniper" },
-      { "Mosin", "Mosin-Nagant" },
-      { "Nagant", "Nagant M1895" },
-      { "Nitro", "Nitro Express" },
-      { "Ranger", "Ranger 73" },
-      { "Rival", "Rival 78" },
-      { "Romero", "Romero 77" },
-      { "Specter", "Specter 1882" },
-      { "Springfield", "Springfield 1866" },
-      { "Vandal", "Vandal 73C" },
-      { "Veterli", "Vetterli 71" },
-      { "Vetterli", "Vetterli 71" },
-    };
-
-    private enum WeaponParts
-    {
-      name,
-      augment
-    }
-
-    private enum QueueParametersOptions
-    {
-      noPram = 0,
-      extended = 0,
-      custom = 0,
-    }
-
-    private enum GeneralAmmoTypes
-    {
-      Base,
-      Alt
-    }
-
-    private static readonly HashSet<string> ammoTranslationList =
-      new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    private readonly string ammoPattern = string.Join("|", new[]
     {
     "Subsonic",
     "Flechette",
-    "Penny",
+    "Penny Shot",
     "Slug",
     "Incendiary",
     "Spitzer",
-    "Dragon",
+    "Dragon Breath",
     "Harpoon",
-    "Steel",
-    "Waxed",
-    "High",
+    "Steel Ball",
+    "Waxed Frag",
+    "High Velocity",
     "Dumdum",
     "Poison",
+    "Poison Arrows",
     "Explosive",
-    "Shot",
-    "Chaos",
-    "Choke",
+    "Shot Bolt",
+    "Chaos Bolt",
+    "Choke Bolt",
     "Starshell",
-    "Concertina",
-    "Frag",
+    "Concertina Arrows",
+    "Frag Arrows",
     "Shredder",
     "DD",
     "DB",
@@ -96,7 +47,44 @@ namespace HuntShowdownTwitchWikiAPI.src
     "PS",
     "SUB",
     "fire"
-    };
+});
+
+    private readonly string augmentPattern = string.Join("|", new[]
+    {
+    "Alamo",
+    "Aperture",
+    "Avtomat",
+    "Bayonet",
+    "Brawler",
+    "Bullseye",
+    "(?<!^)Carbine",
+    "Chain Pistol",
+    "Claw",
+    "Cyclone",
+    "Deadeye",
+    "Extended",
+    "Hatchet",
+    "Ironside",
+    "Mace",
+    "Marksman",
+    "Match",
+    "Pistol",
+    "Pointman",
+    "Precision",
+    "Riposte",
+    "Sharpeye",
+    "Shorty",
+    "Silencer",
+    "Sniper",
+    "Spitfire",
+    "Striker",
+    "Swift",
+    "Talon",
+    "Trauma",
+    "Trueshot"
+});
+
+    private readonly Regex regexWeaponClassificationPattern;
 
     private static readonly Dictionary<string, string> ammoTranslationTable =
     new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
@@ -109,8 +97,8 @@ namespace HuntShowdownTwitchWikiAPI.src
     { "Spitzer",    "Spitzer" },
     { "Dragon",     "Dragon Breath" },
     { "Harpoon",    "Harpoon" },
-    { "Steel",      "Steel Ball" },
-    { "Waxed",      "Waxed Frag" },
+    { "SteelBall",  "Steel Ball" },
+    { "WaxedFrag",  "Waxed Frag" },
     { "High",       "High Velocity" },
     { "Dumdum",     "Dumdum" },
     { "Poison",     "Poison" },
@@ -136,170 +124,131 @@ namespace HuntShowdownTwitchWikiAPI.src
     { "fire", "Incendiary" }
     };
 
-
-    static private string WeaponTranslator(string weaponToBeTranslated)
+    private enum WeaponComponentParts
     {
-      string translatedWeaponResult = "";
-
-      translatedWeaponResult = weaponToBeTranslated;
-
-      string[] translatedWeaponResultSplit = translatedWeaponResult.Split(' ');
-
-      foreach (var pair in weaponTranslationTable)
-      {
-        if (pair.Key.Equals(translatedWeaponResultSplit[(int)WeaponParts.name], StringComparison.OrdinalIgnoreCase))
-        {
-          translatedWeaponResultSplit[(int)WeaponParts.name] = translatedWeaponResultSplit[(int)WeaponParts.name].Replace(
-          pair.Key,
-          pair.Value,
-          StringComparison.OrdinalIgnoreCase);
-        }
-      }
-
-      if (translatedWeaponResult == "")
-      {
-        return weaponToBeTranslated;
-      }
-
-      for (int i = 0; i < translatedWeaponResultSplit.Length; i++)
-      {
-        translatedWeaponResultSplit[i] = char.ToUpper(
-          translatedWeaponResultSplit[i][0]) +
-          translatedWeaponResultSplit[i].Substring(1);
-      }
-
-      //Console.WriteLine(string.Join(' ', translatedWeaponResultSplit));
-
-      return string.Join(' ', translatedWeaponResultSplit);
+      Weapon,
+      Augment,
+      Ammo
     }
 
-    static private string AmmoTranslator(string ammoToBeTranslated)
+    WeaponRepository Repo;
+
+
+    public Parser(WeaponRepository repo)
     {
-      foreach (var pair in ammoTranslationTable)
-      {
-        if (pair.Key.Equals(ammoToBeTranslated, StringComparison.OrdinalIgnoreCase))
-        {
-          ammoToBeTranslated = ammoToBeTranslated.Replace(
-          pair.Key,
-          pair.Value,
-          StringComparison.OrdinalIgnoreCase);
-        }
-      }
+      regexWeaponClassificationPattern =
+        new Regex($@"\b(?<ammo>{ammoPattern})\b|\b(?<augment>{augmentPattern})\b"
+        , RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
-      //Console.WriteLine(ammoToBeTranslated);
-
-      return ammoToBeTranslated;
+      this.Repo = repo;
     }
 
 
-    static private WeaponData? WeaponFinder(WeaponRepository repo, string weaponName)
+    private string Capitalize(string s)
     {
-      var weapon = repo.GetWeapon(weaponName);
+      if (string.IsNullOrWhiteSpace(s))
+        return s;
 
-      if (weapon != null)
+      var sSplit = s.Split(' ');
+
+      string reformedstring = "";
+
+      for (int i = 0; i < sSplit.Length; i++)
       {
-        return weapon;
+        reformedstring += char.ToUpper(sSplit[i][0]) + sSplit[i].Substring(1);
+      }
+
+      return reformedstring.Trim();
+    }
+
+
+    private List<string>? WeaponAmmoTransformer(List<string> weaponComponents)
+    {
+      if (!ammoTranslationTable.TryGetValue(weaponComponents[(int)WeaponComponentParts.Ammo], out string realAmmoName))
+      {
+        return null;
       }
       else
       {
-        string[] weaponNameParts = weaponName.Split(' ');
-
-
-        for (int i = 0; i < weaponNameParts.Length; i++)
-        {
-          if (!ammoTranslationList.Contains(weaponNameParts[i]))
-          {
-            continue;
-          }
-          else
-          {
-            string[] weaponComponents = new string[i];
-            Array.Copy(weaponNameParts, 0, weaponComponents, 0, i);
-
-            weapon = repo.GetWeapon(
-              WeaponTranslator(string.Join(' ', weaponComponents)) + ' ' +
-              AmmoTranslator(weaponNameParts[i]));
-
-
-            //Console.WriteLine(weapon.ToString());
-
-            return weapon;
-          }
-        }
-
-        weapon = repo.GetWeapon(WeaponTranslator(weaponName));
-        return weapon;
+        weaponComponents[(int)WeaponComponentParts.Ammo] = realAmmoName;
       }
+      return weaponComponents;
     }
 
 
-    static private string MagazineMerger(string mag, string reserves)
+    private List<string> WeaponExtractor(string weaponName)
     {
-      if (!mag.Contains("/"))
-      {
-        return mag + "/" + reserves;
-      }
-      else
-      {
-        string[] magSplit = mag.Split("/");
-        string[] reservesSplit = reserves.Split("/");
+      var matches = regexWeaponClassificationPattern.Matches(weaponName);
 
-        return
-          $"{magSplit[(int)GeneralAmmoTypes.Base].Trim()}/" +
-          $"{reservesSplit[(int)GeneralAmmoTypes.Base].Trim()} Alt:" +
-          $"{magSplit[(int)GeneralAmmoTypes.Alt].Trim()}/" +
-          $"{reservesSplit[(int)GeneralAmmoTypes.Alt].Trim()}";
-      }
+      var augments = matches
+          .Cast<Match>()
+          .Where(m => m.Groups["augment"].Success)
+          .Select(m => m.Value)
+          .ToList();
+
+      var ammo = matches
+          .Cast<Match>()
+          .Where(m => m.Groups["ammo"].Success)
+          .Select(m => m.Value)
+          .LastOrDefault() ?? string.Empty;
+
+      string weapon = regexWeaponClassificationPattern.Replace(weaponName, "");
+      weapon = Regex.Replace(weapon, @"\s+", " ").Trim();
+
+      string augmentCombined = augments.Count > 0
+          ? string.Join(" ", augments)
+          : string.Empty;
+
+      return new List<string>
+      {
+          Capitalize(weapon),
+          Capitalize(augmentCombined),
+          Capitalize(ammo)
+      };
+
     }
 
 
-    static public string QueueParser(WeaponRepository repo, string weaponName, string[] parameters)
+    private WeaponData? WeaponFinder(string weaponName)
     {
-      WeaponData Weapon = WeaponFinder(repo, weaponName);
+      WeaponData Weapon = Repo.GetWeapon(weaponName);
 
       if (Weapon == null)
       {
-        return $"{weaponName} Not Found.";
-      }
+        var weaponComponents = WeaponExtractor(weaponName);
 
-      if (parameters.Length == (int)QueueParametersOptions.noPram)
+        List<string> weaponComponentsTransformered = WeaponAmmoTransformer(weaponComponents);
+
+        Weapon = Repo.GetWeaponByKey(weaponComponents);
+
+        if (Weapon == null)
+        {
+          return null;
+        }
+
+      }
+      return Weapon;
+
+    }
+
+
+    public string QueueParser(
+      string weaponName, 
+      Func<WeaponProcessee, string> WeaponReturnStringFormater,
+      string? weaponAugments = null)
+    {
+
+
+      WeaponData Weapon = WeaponFinder(weaponName);
+      
+      if (Weapon == null)
       {
-        return
-          $"|Price:{Weapon.Price.Replace(" ", "")}| " +
-          $"|Damage:{Weapon.Damage.Replace(" ", "")}| " +
-          $"|Velocity:{Weapon.MuzzleVelocity.Replace(" ", "")}| " +
-          $"|Spread:{Weapon.Spread.Replace(" ", "")}| " +
-          $"|Sway:{Weapon.Sway.Replace(" ", "")}| " +
-          $"|Range:{Weapon.DropRange.Replace(" ", "")}| " +
-          $"|Magazine:{MagazineMerger(Weapon.Loaded, Weapon.Extra)}|";
-
+        return $"{weaponName} Not found";
       }
 
-      else if (string.Equals("Extended", parameters[(int)QueueParametersOptions.extended], StringComparison.OrdinalIgnoreCase))
-      {
-        return
-          $"|Size:{Weapon.Size}| " +
-          $"|Ammo Type:{Weapon.GeneralAmmoType.Replace(" ", "")}| " +
-          (string.IsNullOrWhiteSpace(Weapon.SpecialAmmoType)
-            ? ""
-            : $"|Special Ammo Type:{Weapon.SpecialAmmoType.Replace(" ", "")}| ") +
-          $"|Price:{Weapon.Price.Replace(" ", "")}| " +
-          $"|Damage:{Weapon.Damage.Replace(" ", "")}| " +
-          $"|Range:{Weapon.DropRange.Replace(" ", "")}| " +
-          $"|Velocity:{Weapon.MuzzleVelocity.Replace(" ", "")}| " +
-          $"|Recoil:{Weapon.VerticalRecoil.Replace(" ", "")}| " +
-          $"|Fire Rate:{Weapon.RateOfFire.Replace(" ", "")}| " +
-          $"|Cycle Time:{Weapon.CycleTime.Replace(" ", "")}| " +
-          $"|Spread:{Weapon.Spread.Replace(" ", "")}| " +
-          $"|Sway:{Weapon.Sway.Replace(" ", "")}| " +
-          $"|Reload:{Weapon.ReloadSpeed.Replace(" ", "")}| " +
-          $"|Magazine:{MagazineMerger(Weapon.Loaded, Weapon.Extra)}| " +
-          (string.IsNullOrWhiteSpace(Weapon.Note)
-            ? ""
-            : $"|Note:{Weapon.Note}|");
-      }
+      return WeaponReturnStringFormater(new WeaponProcessee(Weapon, weaponAugments));
 
-      return "Something has gone wrong";
+
     }
   }
 }

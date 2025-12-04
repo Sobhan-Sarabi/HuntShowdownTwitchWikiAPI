@@ -9,9 +9,16 @@ namespace HuntShowdownTwitchWikiAPI.src
     private IEnumerable<string> m_WeponStatsCSVFile;
     private readonly List<WeaponData> m_WeponDataList = new List<WeaponData>();
 
+    private IEnumerable<string> _traitStatsCsvFile;
+
     public void CsvOpener(string csvPath)
     {
       m_WeponStatsCSVFile = File.ReadLines(csvPath);
+    }
+
+    public void TraitsCsvOpener(string csvPath)
+    {
+      _traitStatsCsvFile = File.ReadLines(csvPath);
     }
 
     public List<WeaponData> CsvLoadToWeapn()
@@ -21,7 +28,7 @@ namespace HuntShowdownTwitchWikiAPI.src
 
       bool isFirstLine = true;
 
-      foreach (var weapon in m_WeponStatsCSVFile)
+      foreach (var line in m_WeponStatsCSVFile)
       {
         // Skip header
         if (isFirstLine)
@@ -30,43 +37,132 @@ namespace HuntShowdownTwitchWikiAPI.src
           continue;
         }
 
-        if (string.IsNullOrWhiteSpace(weapon))
+        if (string.IsNullOrWhiteSpace(line))
           continue;
 
-        var parts = weapon.Split(',');
+        var parts = line.Split(',');
 
-        if (parts.Length < 18)
+        // NOTE: you index parts[0..19], so you actually expect at least 20 columns here.
+        if (parts.Length < 20)
         {
-          Console.WriteLine("Skipping malformed line: " + weapon);
+          Console.WriteLine("Skipping malformed line: " + line);
           continue;
         }
 
         WeaponData newWeapon = new WeaponData
         {
-          Weapon = parts[0],
-          Size = parts[1],
-          SpecialAmmoType = parts[2],
-          GeneralAmmoType = parts[3],
-          Price = parts[4],
-          Damage = parts[5],
-          DropRange = parts[6],
-          MuzzleVelocity = parts[7],
-          VerticalRecoil = parts[8],
-          RateOfFire = parts[9],
-          CycleTime = parts[10],
-          Spread = parts[11],
-          Sway = parts[12],
-          ReloadSpeed = parts[13],
-          Loaded = parts[14],
-          Extra = parts[15],
-          AmmoType = parts[16],
-          Note = parts[17]
+          FullWeaponName = parts[0].Trim(),
+          WeaponAugment = parts[1].Trim(),
+          WeaponBase = parts[2].Trim(),
+          AmmoType = parts[3].Trim(),
+          Size = parts[4].Trim(),
+          SpecialType = parts[5].Trim(),
+          GeneralAmmoType = parts[6].Trim(),
+          Price = parts[7].Trim(),
+          Damage = parts[8].Trim(),
+          DropRange = parts[9].Trim(),
+          MuzzleVelocity = parts[10].Trim(),
+          VerticalRecoil = parts[11].Trim(),
+          RateOfFire = parts[12].Trim(),
+          CycleTime = parts[13].Trim(),
+          Spread = parts[14].Trim(),
+          Sway = parts[15].Trim(),
+          ReloadSpeed = parts[16].Trim(),
+          Loaded = parts[17].Trim(),
+          Extra = parts[18].Trim(),
+          Note = parts[19].Trim()
         };
 
         m_WeponDataList.Add(newWeapon);
       }
 
       return m_WeponDataList;
+    }
+
+    public List<TraitData> CsvLoadToTraits()
+    {
+      if (_traitStatsCsvFile == null)
+        throw new InvalidOperationException("Traits CSV file not opened. Call TraitsCsvOpener() first.");
+
+      var traits = new List<TraitData>();
+      bool isFirstLine = true;
+
+      foreach (var line in _traitStatsCsvFile)
+      {
+        if (isFirstLine)
+        {
+          isFirstLine = false;
+          continue;
+        }
+
+        if (string.IsNullOrWhiteSpace(line))
+          continue;
+
+        var parts = SplitCsvLine(line);
+        if (parts.Count < 5)
+        {
+          Console.WriteLine("Skipping malformed trait line: " + line);
+          continue;
+        }
+
+        var trait = new TraitData
+        {
+          Name = parts[0].Trim(),
+          Cost = parts[1].Trim(),
+          Unlock = parts[2].Trim(),
+          Type = parts[3].Trim(),
+          Effect = parts[4].Trim()
+        };
+
+        traits.Add(trait);
+      }
+
+      return traits;
+    }
+
+    private static List<string> SplitCsvLine(string line)
+    {
+      var result = new List<string>();
+      if (line == null)
+        return result;
+
+      var current = new System.Text.StringBuilder();
+      bool inQuotes = false;
+
+      for (int i = 0; i < line.Length; i++)
+      {
+        char c = line[i];
+
+        if (c == '"')
+        {
+          if (inQuotes && i + 1 < line.Length && line[i + 1] == '"')
+          {
+            // Escaped quote
+            current.Append('"');
+            i++; // Skip the next quote
+          }
+          else
+          {
+            // Toggle in/out of quotes
+            inQuotes = !inQuotes;
+          }
+        }
+        else if (c == ',' && !inQuotes)
+        {
+          // Field separator
+          result.Add(current.ToString());
+          current.Clear();
+        }
+        else
+        {
+          current.Append(c);
+        }
+      }
+
+      // Last field
+      result.Add(current.ToString());
+
+      return result;
     }
   }
 }
