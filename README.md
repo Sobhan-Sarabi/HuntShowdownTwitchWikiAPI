@@ -40,7 +40,7 @@ The program uses regular expressions to detect weapon names and keywords. Since 
 ## Other plans
 I had plans to continue this into a better version with a full database, still planning on it. This is the schema of that DB.
 
-![Database diagram](assets/HuntWikiDB.png)
+![Database diagram](HuntWikiDB.png)
 
 ```sql
 CREATE TABLE [BulletShellTypeWeapon] (
