@@ -1,0 +1,643 @@
+﻿Full Weapon Name,Weapon Augment,Weapon Base,Weapon Name,AmmoConfig,GeneralAmmoType,AmmoType,AmmoTypes,Size,Price,BaseWeaponPrice,AmmoTypePrice,Damage,Drop Range,Muzzle Velocity,Vertical Recoil,Rate of Fire,Cycle Time,Spread,Sway,Reload Speed,Loaded,Extra,Note
+1865 Carbine,Base,Carbine,Carbine,SingleBulletType,Medium,Default,Medium / Default,Large Slot,70,70,0,145,115,340,4,22,1.8,23,77,8.5,8,21,
+1865 Carbine Aperture,Aperture,Carbine,Carbine Aperture,SingleBulletType,Medium,Default,Medium / Default,Large Slot,74,74,0,145,120,340,4,22,1.8,23,77,8.5,8,21,
+1865 Carbine Aperture FMJ,Aperture,Carbine,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,124,74,50,145,110,272,7,22,1.8,23,77,8.5,8,21,Damage dropoff begins at 40m
+1865 Carbine Aperture Subsonic,Aperture,Carbine,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,84,74,10,145,95,242,4,22,1.8,23,77,8.5,8,25,Reduced Sound
+1865 Carbine FMJ,Base,Carbine,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,120,70,50,145,105,272,7,22,1.8,23,77,8.5,8,21,Damage dropoff begins at 40m
+1865 Carbine Silencer,Silencer,Carbine,Carbine Silencer,SingleBulletType,Medium,Default,Medium / Default,Large Slot,80,80,0,137,105,289,4,22,1.8,23,77,8.5,8,21,
+1865 Carbine Silencer FMJ,Silencer,Carbine,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,130,80,50,137,90,218,7,22,1.8,23,77,8.5,8,21,Damage dropoff begins at 40m
+1865 Carbine Silencer Subsonic,Silencer,Carbine,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,90,80,10,137,95,229,4,22,1.8,23,77,8.5,8,25,Reduced Sound
+1865 Carbine Subsonic,Base,Carbine,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,80,70,10,145,95,242,4,22,1.8,23,77,8.5,8,25,Reduced Sound
+Auto-4 Shorty,Base,Auto 4,Auto 4,SingleShellType,Shells,Default,Shells / Default,Medium Slot,300,300,0,154,20,350,25,24,0.6,57,147,9.7,4,5,
+Auto-4 Shorty Flechette,Base,Auto 4,,SingleShellType,Shells,Flechette,Shells / Flechette,Medium Slot,340,300,40,113,20,350,25,24,0.6,35,147,9.7,4,5,Causes Medium Bleeding
+Auto-4 Shorty Penny Shot,Base,Auto 4,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Medium Slot,310,300,10,107,20,350,25,24,0.6,125,147,9.7,4,7,
+Auto-4 Shorty Slug,Base,Auto 4,,SingleShellType,Shells,Slug,Shells / Slug,Medium Slot,430,300,130,167,20,350,25,24,0.6,160,147,9.7,4,3,
+Auto-5,Base,Auto,Auto 5,SingleShellType,Shells,Default,Shells / Default,Large Slot,600,600,0,194,30,425,20,24,0.6,35,133,10.7,5,6,
+Auto-5 Flechette,Base,Auto,,SingleShellType,Shells,Flechette,Shells / Flechette,Large Slot,640,600,40,135,30,425,20,24,0.6,25,133,10.7,5,6,Causes Medium Bleeding
+Auto-5 Penny Shot,Base,Auto,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,610,600,10,147,30,425,20,24,0.6,100,133,10.7,5,9,
+Auto-5 Slug,Base,Auto,,SingleShellType,Shells,Slug,Shells / Slug,Large Slot,730,600,130,179,30,425,20,24,0.6,95,133,10.7,5,4,
+Berthier 1892,Base,Berthier,Berthier,TwoBulletType,Long,Default,Long / Default,Large Slot,330,330,0,133,120,590,12,27,1.7,42.5,77,2.7,3,9,
+Berthier 1892 Deadeye,Deadeye,Berthier,Berthier Deadeye,TwoBulletType,Long,Default,Long / Default,Large Slot,347,347,0,133,120,590,12,27,1.7,52.5,69,2.7,3,9,
+Berthier 1892 Deadeye Incendiary,Deadeye,Berthier,,TwoBulletType,Long,Incendiary,Long / Incendiary,Large Slot,382,347,35,133,120,590,12,27,1.7,52.5,69,2.7,3,9,Ignites Hunters in one shot up to 40m
+Berthier 1892 Deadeye Spitzer,Deadeye,Berthier,,TwoBulletType,Long,Spitzer,Long / Spitzer,Large Slot,422,347,75,113,140,780,16,27,1.7,52.5,69,2.7,3,6,
+Berthier 1892 Incendiary,Base,Berthier,,TwoBulletType,Long,Incendiary,Long / Incendiary,Large Slot,365,330,35,133,120,590,12,27,1.7,42.5,77,2.7,3,9,Ignites Hunters in one shot up to 40m
+Berthier 1892 Marksman,Marksman,Berthier,Berthier Marksman,TwoBulletType,Long,Default,Long / Default,Large Slot,363,363,0,133,120,590,12,27,1.7,62.5,69,2.7,3,9,
+Berthier 1892 Marksman Incendiary,Marksman,Berthier,,TwoBulletType,Long,Incendiary,Long / Incendiary,Large Slot,398,363,35,133,120,590,12,27,1.7,62.5,69,2.7,3,9,Ignites Hunters in one shot up to 40m
+Berthier 1892 Marksman Spitzer,Marksman,Berthier,,TwoBulletType,Long,Spitzer,Long / Spitzer,Large Slot,438,363,75,113,140,780,16,27,1.7,62.5,69,2.7,3,6,
+Berthier 1892 Riposte,Riposte,Berthier,Berthier Riposte,TwoBulletType,Long,Default,Long / Default,Large Slot,340,340,0,133,120,590,12,27,1.7,42.5,77,2.7,3,9,
+Berthier 1892 Riposte Incendiary,Riposte,Berthier,,TwoBulletType,Long,Incendiary,Long / Incendiary,Large Slot,375,340,35,133,120,590,12,27,1.7,42.5,77,2.7,3,9,Ignites Hunters in one shot up to 40m
+Berthier 1892 Riposte Spitzer,Riposte,Berthier,,TwoBulletType,Long,Spitzer,Long / Spitzer,Large Slot,415,340,75,113,140,780,16,27,1.7,42.5,77,2.7,3,6,
+Berthier 1892 Spitzer,Base,Berthier,,TwoBulletType,Long,Spitzer,Long / Spitzer,Large Slot,405,330,75,113,140,780,16,27,1.7,42.5,77,2.7,3,6,
+Bomb Lance,Base,BombLance,BombLance,TwoSpecialType,Special,Default,Special / Default,Large Slot,199,199,0,150,5,60,0,9,7.3,37.5,0,6.9,1,3,
+Bomb Lance Dragon Breath,Base,BombLance,,TwoSpecialType,Special,Dragon Breath,Special / Dragon Breath,Large Slot,209,199,10,58,5,100,0,9,7.3,32.5,0,6.9,1,3,Causes Medium Burning
+Bomb Lance Harpoon,Base,BombLance,,TwoSpecialType,Special,Harpoon,Special / Harpoon,Large Slot,204,199,5,260,5,80,0,9,7.3,37.9,0,6.9,1,6,"Causes Intense Bleeding, Can be recovered and reused"
+Bomb Lance Steel Ball,Base,BombLance,,TwoSpecialType,Special,Steel Ball,Special / Steel Ball,Large Slot,204,199,5,239,5,450,0,9,7.3,62.5,0,6.9,1,4,
+Bomb Lance Waxed Frag,Base,BombLance,,TwoSpecialType,Special,Waxed Frag,Special / Waxed Frag,Large Slot,249,199,50,126,5,60,0,9,7.3,37.5,0,6.9,1,4,Causes Intense Bleeding
+Bomb Launcher,Base,BombLauncher,BombLauncher,TwoSpecialType,Special,Default,Special / Default,Medium Slot,110,110,0,150,5,60,0,13,5.3,25,0,5.1,1,3,
+Bomb Launcher Dragon Breath,Base,BombLauncher,,TwoSpecialType,Special,Dragon Breath,Special / Dragon Breath,Medium Slot,120,110,10,58,5,100,0,13,5.3,32.5,0,5.1,1,3,Causes Medium Burning
+Bomb Launcher Harpoon,Base,BombLauncher,,TwoSpecialType,Special,Harpoon,Special / Harpoon,Medium Slot,115,110,5,260,5,80,0,13,5.3,9,0,5.1,1,6,"Causes Intense Bleeding, Can be recovered and reused"
+Bomb Launcher Steel Ball,Base,BombLauncher,,TwoSpecialType,Special,Steel Ball,Special / Steel Ball,Medium Slot,115,110,5,239,5,450,0,13,5.3,62.5,0,5.1,1,4,
+Bomb Launcher Waxed Frag,Base,BombLauncher,,TwoSpecialType,Special,Waxed Frag,Special / Waxed Frag,Medium Slot,160,110,50,174,5,60,0,13,5.3,25,0,5.1,1,4,Causes Intense Bleeding
+Bornheim No. 3,Base,Bornheim,Bornheim,SingleBulletType,Compact,Default,Compact / Default,Small Slot,146,146,0,74,80,380,6,65,0.2,25,128,7.4,6,15,
+Bornheim No. 3 Extended,Extended,Bornheim,Bornheim Extended,SingleBulletType,Compact,Default,Compact / Default,Small Slot,203,203,0,74,80,380,6,44,0.2,25,128,9.6,9,15,
+Bornheim No. 3 Extended High Velocity,Extended,Bornheim,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Small Slot,263,203,60,70,85,455,7.5,44,0.2,25,128,9.6,9,10,
+Bornheim No. 3 Extended Incendiary,Extended,Bornheim,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Small Slot,243,203,40,74,80,380,6,44,0.2,25,128,9.6,9,15,Ignites Hunters in one shot up to 20m
+Bornheim No. 3 Extended Subsonic,Extended,Bornheim,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Small Slot,208,203,5,74,60,256,6,44,0.2,25,128,9.6,9,18,Reduced Sound
+Bornheim No. 3 High Velocity,Base,Bornheim,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Small Slot,206,146,60,70,85,455,7.5,65,0.2,25,128,7.4,6,10,
+Bornheim No. 3 Incendiary,Base,Bornheim,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Small Slot,186,146,40,74,80,380,6,65,0.2,25,128,7.4,6,15,Ignites Hunters in one shot up to 20m
+Bornheim No. 3 Match,Match,Bornheim,Bornheim Match,SingleBulletType,Compact,Default,Compact / Default,Medium Slot,180,180,0,80,85,400,3,65,0.2,22.5,87,7.6,6,20,
+Bornheim No. 3 Match High Velocity,Match,Bornheim,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Medium Slot,240,180,60,76,90,475,5,65,0.2,22.5,87,7.6,6,15,
+Bornheim No. 3 Match Incendiary,Match,Bornheim,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Medium Slot,220,180,40,80,85,400,3,65,0.2,22.5,87,7.6,6,20,Ignites Hunters in one shot up to 20m
+Bornheim No. 3 Match Subsonic,Match,Bornheim,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Medium Slot,185,180,5,80,60,263,3,65,0.2,22.5,87,7.6,6,24,Reduced Sound
+Bornheim No. 3 Silencer,Silencer,Bornheim,Bornheim Silencer,SingleBulletType,Compact,Default,Compact / Default,Small Slot,174,174,0,70,70,323,6,65,0.2,25,128,7.4,6,15,
+Bornheim No. 3 Silencer High Velocity,Silencer,Bornheim,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Small Slot,234,174,60,66,75,398,7.5,65,0.2,25,128,7.4,6,10,
+Bornheim No. 3 Silencer Incendiary,Silencer,Bornheim,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Small Slot,214,174,40,70,70,323,6,65,0.2,25,128,7.4,6,15,Ignites Hunters in one shot up to 20m
+Bornheim No. 3 Silencer Subsonic,Silencer,Bornheim,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Small Slot,179,174,5,70,55,236,6,65,0.2,25,128,7.4,6,18,Reduced Sound
+Bornheim No. 3 Subsonic,Base,Bornheim,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Small Slot,151,146,5,74,60,256,6,65,0.2,25,128,7.4,6,18,Reduced Sound
+Centennial,Base,Centennial,Centennial,SingleBulletType,Medium,Default,Medium / Default,Large Slot,157,157,0,123,140,600,11,23,1.6,25,77,15.5,10,12,
+Centennial Dumdum,Base,Centennial,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Large Slot,157 + Scarce,157,-1,123,125,480,11,23,1.6,25,77,15.5,10,12,Causes Intense Bleeding
+Centennial FMJ,Base,Centennial,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,207,157,50,123,125,480,14,23,1.6,25,77,15.5,10,12,Damage dropoff begins at 40m
+Centennial High Velocity,Base,Centennial,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,217,157,60,116,155,725,14,23,1.6,25,77,15.5,10,8,
+Centennial Pointman,Pointman,Centennial,Centennial Pointman,SingleBulletType,Medium,Default,Medium / Default,Medium Slot,114,114,0,120,110,540,15,24,1.6,55,93,10.9,6,12,
+Centennial Pointman Dumdum,Pointman,Centennial,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Medium Slot,114 + Scarce,114,-1,120,85,282,15,24,1.6,55,93,10.9,6,12,Causes Intense Bleeding
+Centennial Pointman FMJ,Pointman,Centennial,,SingleBulletType,Medium,FMJ,Medium / FMJ,Medium Slot,164,114,50,120,85,282,19,24,1.6,55,93,10.9,6,12,Damage dropoff begins at 40m
+Centennial Pointman High Velocity,Pointman,Centennial,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Medium Slot,174,114,60,114,125,490,19,24,1.6,55,93,10.9,6,8,
+Centennial Pointman Poison,Pointman,Centennial,,SingleBulletType,Medium,Poison,Medium / Poison,Medium Slot,164,114,50,120,110,540,15,24,1.6,55,93,10.9,6,12,Causes Medium Poison
+Centennial Pointman Subsonic,Pointman,Centennial,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Medium Slot,124,114,10,120,80,312,15,24,1.6,55,93,10.9,6,14,Reduced Sound
+Centennial Poison,Base,Centennial,,SingleBulletType,Medium,Poison,Medium / Poison,Large Slot,207,157,50,123,140,600,11,23,1.6,25,77,15.5,10,12,Causes Medium Poison
+Centennial Shorty,Shorty,Centennial,Centennial Shorty,SingleBulletType,Medium,Default,Medium / Default,Medium Slot,103,103,0,120,110,540,15,24,1.6,42.5,100,10.9,6,12,
+Centennial Shorty Dumdum,Shorty,Centennial,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Medium Slot,103 + Scarce,103,-1,120,85,432,15,24,1.6,42.5,100,10.9,6,12,Causes Intense Bleeding
+Centennial Shorty FMJ,Shorty,Centennial,,SingleBulletType,Medium,FMJ,Medium / FMJ,Medium Slot,153,103,50,120,85,432,19,24,1.6,42.5,100,10.9,6,12,Damage dropoff begins at 40m
+Centennial Shorty High Velocity,Shorty,Centennial,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Medium Slot,163,103,60,114,125,640,19,24,1.6,42.5,100,10.9,6,8,
+Centennial Shorty Poison,Shorty,Centennial,,SingleBulletType,Medium,Poison,Medium / Poison,Medium Slot,153,103,50,120,110,540,15,24,1.6,42.5,100,10.9,6,12,Causes Medium Poison
+Centennial Shorty Silencer,Shorty Silencer,Centennial,Centennial Shorty Silencer,SingleBulletType,Medium,Default,Medium / Default,Medium Slot,137,137,0,114,100,459,15,24,1.6,42.5,100,10.9,6,12,
+Centennial Shorty Silencer Dumdum,Shorty Silencer,Centennial,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Medium Slot,137 + Scarce,137,-1,114,85,367,15,24,1.6,42.5,100,10.9,6,12,Causes Intense Bleeding
+Centennial Shorty Silencer FMJ,Shorty Silencer,Centennial,,SingleBulletType,Medium,FMJ,Medium / FMJ,Medium Slot,187,137,50,114,85,367,19,24,1.6,42.5,100,10.9,6,12,Damage dropoff begins at 40m
+Centennial Shorty Silencer High Velocity,Shorty Silencer,Centennial,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Medium Slot,197,137,60,108,110,559,19,24,1.6,42.5,100,10.9,6,8,
+Centennial Shorty Silencer Poison,Shorty Silencer,Centennial,,SingleBulletType,Medium,Poison,Medium / Poison,Medium Slot,187,137,50,114,100,459,15,24,1.6,42.5,100,10.9,6,12,Causes Medium Poison
+Centennial Shorty Silencer Subsonic,Shorty Silencer,Centennial,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Medium Slot,147,137,10,114,75,283,15,24,1.6,42.5,100,10.9,6,14,Reduced Sound
+Centennial Shorty Subsonic,Shorty,Centennial,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Medium Slot,113,103,10,120,80,312,15,24,1.6,42.5,100,10.9,6,14,Reduced Sound
+Centennial Sniper,Sniper,Centennial,Centennial Sniper,SingleBulletType,Medium,Default,Medium / Default,Large Slot,181,181,0,123,140,600,11,23,1.6,37.5,69,15.4,10,12,
+Centennial Sniper Dumdum,Sniper,Centennial,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Large Slot,181 + Scarce,181,-1,123,125,480,11,23,1.6,37.5,69,15.4,10,12,Causes Intense Bleeding
+Centennial Sniper FMJ,Sniper,Centennial,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,231,181,50,123,125,480,14,23,1.6,37.5,69,15.4,10,12,Damage dropoff begins at 40m
+Centennial Sniper High Velocity,Sniper,Centennial,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,241,181,60,116,155,725,14,23,1.6,37.5,69,15.4,10,8,
+Centennial Sniper Poison,Sniper,Centennial,,SingleBulletType,Medium,Poison,Medium / Poison,Large Slot,231,181,50,123,140,600,11,23,1.6,37.5,69,15.4,10,12,Causes Medium Poison
+Centennial Sniper Subsonic,Sniper,Centennial,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,191,181,10,123,105,333,11,23,1.6,37.5,69,15.4,10,14,Reduced Sound
+Centennial Subsonic,Base,Centennial,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,167,157,10,123,105,333,11,23,1.6,25,77,15.5,10,14,Reduced Sound
+Centennial Trauma,Trauma,Centennial,Centennial Trauma,SingleBulletType,Medium,Default,Medium / Default,Large Slot,167,167,0,123,140,600,12.5,23,1.6,25,77,15.5,10,12,
+Centennial Trauma Dumdum,Trauma,Centennial,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Large Slot,217,167,50,123,125,480,12.5,23,1.6,25,77,15.5,10,12,Causes Intense Bleeding
+Centennial Trauma FMJ,Trauma,Centennial,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,217,167,50,123,125,480,15,23,1.6,25,77,15.5,10,12,Damage dropoff begins at 40m
+Centennial Trauma High Velocity,Trauma,Centennial,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,227,167,60,116,155,725,15,23,1.6,25,77,15.5,10,8,
+Centennial Trauma Poison,Trauma,Centennial,,SingleBulletType,Medium,Poison,Medium / Poison,Large Slot,217,167,50,123,140,600,12.5,23,1.6,25,77,15.5,10,12,Causes Medium Poison
+Centennial Trauma Subsonic,Trauma,Centennial,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,177,167,10,123,105,333,12.5,23,1.6,25,77,15.5,10,14,Reduced Sound
+Chu Ko Nu,Base,Chu Ko Nu,Chu Ko Nu,TwoSpecialType,Special,Default,Special / Default,Medium Slot,75,75,0,150,15,125,2,40,0.7,10,100,8.5,10,10,
+Chu Ko Nu Explosive Bolt,Base,Chu Ko Nu,,TwoSpecialType,Special,Explosive,Special / Explosive,Medium Slot,125,75,50,99,15,80,2,25,0.7,17.5,100,8.5,10,5,Causes Light Bleeding
+Chu Ko Nu Incendiary Bolt,Base,Chu Ko Nu,,TwoSpecialType,Special,Incendiary,Special / Incendiary,Medium Slot,100,75,25,150,15,125,2,40,0.7,10,100,8.5,10,10,Causes Medium Burning
+Conversion,Base,Conversion,Conversion,SingleBulletType,Compact,Default,Compact / Default,Small Slot,55,55,0,104,75,300,4.5,21,1.4,30,128,11.2,6,18,
+Conversion Chain Pistol,Chain Pistol,Conversion,Conversion Chain Pistol,SingleBulletType,Compact,Default,Compact / Default,Small Slot,84,84,0,104,75,300,3.5,24,1.4,45,128,28.7,17,18,
+Conversion Chain Pistol Dumdum,Chain Pistol,Conversion,,SingleBulletType,Compact,Dumdum,Compact / Dumdum,Small Slot,134,84,50,104,70,270,3.5,24,1.4,45,128,28.7,17,18,Causes Medium Bleeding
+Conversion Chain Pistol FMJ,Chain Pistol,Conversion,,SingleBulletType,Compact,FMJ,Compact / FMJ,Small Slot,134,84,50,104,70,270,5.5,24,1.4,45,128,28.7,17,18,Damage dropoff begins at 30m
+Conversion Dumdum,Base,Conversion,,SingleBulletType,Compact,Dumdum,Compact / Dumdum,Small Slot,105,55,50,104,70,270,4.5,21,1.4,30,128,11.2,6,18,Causes Medium Bleeding
+Conversion FMJ,Base,Conversion,,SingleBulletType,Compact,FMJ,Compact / FMJ,Small Slot,105,55,50,104,70,270,6.5,21,1.4,30,128,11.2,6,18,Damage dropoff begins at 30m
+Crossbow,Base,Crossbow,Crossbow,TwoSpecialType,Special,Default,Special / Default,Large Slot,50,50,0,246,20,150,4,13,4.8,30,77,5.3,1,9,
+Crossbow Deadeye,Deadeye,Crossbow,Crossbow Deadeye,TwoSpecialType,Special,Default,Special / Default,Large Slot,53,53,0,246,20,150,4,13,4.8,30,69,5.3,1,9,
+Crossbow Deadeye Explosive Bolt,Deadeye,Crossbow,,TwoSpecialType,Special,Explosive,Special / Explosive,Large Slot,53 + Scarce,53,-1,220,10,60,4,13,4.8,37.5,69,5.3,1,4,
+Crossbow Deadeye Shot Bolt,Deadeye,Crossbow,,TwoSpecialType,Special,Shot Bolt,Special / Shot Bolt,Large Slot,93,53,40,454,15,100,4,13,4.8,30,69,5.3,1,6,
+Crossbow Deadeye Steel Bolt,Deadeye,Crossbow,,TwoSpecialType,Special,Steel,Special / Steel,Large Slot,93,53,40,246,35,225,8,13,4.8,30,69,5.3,1,7,Can be recovered and reused
+Crossbow Explosive Bolt,Base,Crossbow,,TwoSpecialType,Special,Explosive,Special / Explosive,Large Slot,50 + Scarce,50,-1,220,10,60,4,13,4.8,37.5,77,5.3,1,4,
+Crossbow Shot Bolt,Base,Crossbow,,TwoSpecialType,Special,Shot Bolt,Special / Shot Bolt,Large Slot,90,50,40,454,15,100,4,13,4.8,30,77,5.3,1,6,
+Crossbow Steel Bolt,Base,Crossbow,,TwoSpecialType,Special,Steel,Special / Steel,Large Slot,90,50,40,246,35,225,8,13,4.8,30,77,5.3,1,7,
+Dolch 96,Base,Dolch,Dolch,SingleSpecialType,Special,Default,Special / Default,Small Slot,690,690,0,97,70,440,14,64,0.4,35,128,6,10,10,
+Dolch 96 Bullseye,Bullseye,Dolch,Dolch Bullseye,SingleSpecialType,Special,Default,Special / Default,Small Slot,725,725,0,97,70,440,14,40,0.4,50,106,21.7,10,10,
+Dolch 96 Bullseye Dumdum,Bullseye,Dolch,,SingleSpecialType,Special,Dumdum,Special / Dumdum,Small Slot,725 + Scarce,725,-1,97,65,390,14,40,0.4,50,106,21.7,10,10,Causes Medium Bleeding
+Dolch 96 Bullseye FMJ,Bullseye,Dolch,,SingleSpecialType,Special,FMJ,Special / FMJ,Small Slot,725 + Scarce,725,-1,97,65,390,17,40,0.4,50,106,21.7,10,10,Damage dropoff begins at 30m
+Dolch 96 Claw,Claw,Dolch,Dolch Claw,SingleSpecialType,Special,Default,Special / Default,Small Slot,700,700,0,97,70,440,14,64,0.4,35,128,6,10,10,
+Dolch 96 Claw Dumdum,Claw,Dolch,,SingleSpecialType,Special,Dumdum,Special / Dumdum,Small Slot,700 + Scarce,700,-1,97,65,390,14,64,0.4,35,128,6,10,10,Causes Medium Bleeding
+Dolch 96 Claw FMJ,Claw,Dolch,,SingleSpecialType,Special,FMJ,Special / FMJ,Small Slot,700 + Scarce,700,-1,97,65,390,17,64,0.4,35,128,6,10,10,Damage dropoff begins at 30m
+Dolch 96 Dumdum,Base,Dolch,,SingleSpecialType,Special,Dumdum,Special / Dumdum,Small Slot,690 + Scarce,690,-1,97,65,390,14,64,0.4,35,128,6,10,10,Causes Medium Bleeding
+Dolch 96 FMJ,Base,Dolch,,SingleSpecialType,Special,FMJ,Special / FMJ,Small Slot,690 + Scarce,690,-1,97,65,390,17,64,0.4,35,128,6,10,10,Damage dropoff begins at 30m
+Dolch 96 Precision,Precision,Dolch,Dolch Precision,SingleSpecialType,Special,Default,Special / Default,Medium Slot,730,730,0,97,70,440,12,64,0.3,30,87,6,10,10,
+Dolch 96 Precision Dumdum,Precision,Dolch,,SingleSpecialType,Special,Dumdum,Special / Dumdum,Medium Slot,730 + Scarce,730,-1,97,65,390,12,64,0.3,30,87,6,10,10,Causes Medium Bleeding
+Dolch 96 Precision FMJ,Precision,Dolch,,SingleSpecialType,Special,FMJ,Special / FMJ,Medium Slot,730 + Scarce,730,-1,97,65,390,14,64,0.3,30,87,6,10,10,Damage dropoff begins at 30m
+Drilling,Base,Drilling,Drilling,BulletShellType,Medium,Default,Medium / Default,Large Slot,510,510,0,120,145,530,12,20,0.6,42.5,77,5.3,2,20,
+Drilling Buckshot,Base,Drilling,Drilling,BulletShellType,Shells,Default,Shells / Default,Large Slot,0,0,0,200,20,450,32,9,6.2,42.5,77,5.1,1,5,
+Drilling Dumdum,Base,Drilling,,BulletShellType,Medium,Dumdum,Medium / Dumdum,Large Slot,560,510,50,120,125,371,12,20,0.6,42.5,77,5.3,2,20,Causes Intense Bleeding
+Drilling Flechette,Base,Drilling,,BulletShellType,Shells,Flechette,Shells / Flechette,Large Slot,530,510,20,132,20,450,32,9,6.2,21.2,77,5.1,1,5,Causes Medium Bleeding
+Drilling FMJ,Base,Drilling,,BulletShellType,Medium,FMJ,Medium / FMJ,Large Slot,560,510,50,120,125,371,16,20,0.6,42.5,77,5.3,2,20,Damage dropoff begins at 40m
+Drilling Hatchet,Hatchet,Drilling,Drilling Hatchet,BulletShellType,Medium,Default,Medium / Default,Medium Slot,340,340,0,118,120,424,16,18,0.6,62.5,100,5.6,2,20,
+Drilling Hatchet Buckshot,Hatchet,Drilling,Drilling Hatchet,BulletShellType,Shells,Default,Shells / Default,Medium Slot,0,340,0,200,20,375,30,11,5.8,62.5,100,5.3,1,3,
+Drilling Hatchet Dumdum,Hatchet,Drilling,,BulletShellType,Medium,Dumdum,Medium / Dumdum,Medium Slot,390,340,50,118,105,340,16,18,0.6,62.5,100,5.6,2,20,Causes Intense Bleeding
+Drilling Hatchet Flechette,Hatchet,Drilling,,BulletShellType,Shells,Flechette,Shells / Flechette,Medium Slot,360,340,20,130,20,375,30,11,5.8,26.2,100,5.3,1,3,Causes Medium Bleeding
+Drilling Hatchet FMJ,Hatchet,Drilling,,BulletShellType,Medium,FMJ,Medium / FMJ,Medium Slot,390,340,50,118,105,340,20,18,0.6,62.5,100,5.6,2,20,Damage dropoff begins at 40m
+Drilling Hatchet High Velocity,Hatchet,Drilling,,BulletShellType,Medium,High Velocity,Medium / High Velocity,Medium Slot,400,340,60,113,135,524,22,18,0.6,62.5,100,5.6,2,13,
+Drilling Hatchet Penny Shot,Hatchet,Drilling,,BulletShellType,Shells,Penny Shot,Shells / Penny Shot,Medium Slot,345,340,5,85,15,375,30,11,5.8,62.1,100,5.3,1,4,
+Drilling Hatchet Slug,Hatchet,Drilling,,BulletShellType,Shells,Slug,Shells / Slug,Medium Slot,405,340,65,157,20,375,30,11,5.8,125,100,5.3,1,2,
+Drilling High Velocity,Base,Drilling,,BulletShellType,Medium,High Velocity,Medium / High Velocity,Large Slot,570,510,60,114,165,655,16,20,0.6,42.5,77,5.3,2,13,
+Drilling Penny Shot,Base,Drilling,,BulletShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,515,510,5,190,20,450,32,9,6.2,75,77,5.1,1,8,
+Drilling Shorty,Shorty,Drilling,Drilling Shorty,BulletShellType,Medium,Default,Medium / Default,Medium Slot,330,330,0,118,120,424,16,20,0.6,62.5,100,4.8,2,20,
+Drilling Shorty Buckshot,Shorty,Drilling,Drilling Shorty,BulletShellType,Shells,Default,Shells / Default,Medium Slot,0,0,0,200,20,375,30,11,5.8,62.5,100,4.9,1,3,
+Drilling Shorty Dumdum,Shorty,Drilling,,BulletShellType,Medium,Dumdum,Medium / Dumdum,Medium Slot,380,330,50,118,105,340,16,20,0.6,62.5,100,4.8,2,20,Causes Intense Bleeding
+Drilling Shorty Flechette,Shorty,Drilling,,BulletShellType,Shells,Flechette,Shells / Flechette,Medium Slot,350,330,20,130,20,375,30,11,5.8,26.2,100,4.9,1,3,Causes Medium Bleeding
+Drilling Shorty FMJ,Shorty,Drilling,,BulletShellType,Medium,FMJ,Medium / FMJ,Medium Slot,380,330,50,118,105,340,20,20,0.6,62.5,100,4.8,2,20,Damage dropoff begins at 40m
+Drilling Shorty High Velocity,Shorty,Drilling,,BulletShellType,Medium,High Velocity,Medium / High Velocity,Medium Slot,390,330,60,113,135,524,22,20,0.6,62.5,100,4.8,2,13,
+Drilling Shorty Penny Shot,Shorty,Drilling,,BulletShellType,Shells,Penny Shot,Shells / Penny Shot,Medium Slot,335,330,5,85,15,375,30,11,5.8,62.1,100,4.9,1,4,
+Drilling Shorty Slug,Shorty,Drilling,,BulletShellType,Shells,Slug,Shells / Slug,Medium Slot,395,330,65,157,20,375,30,11,5.8,125,100,4.9,1,2,
+Drilling Slug,Base,Drilling,,BulletShellType,Shells,Slug,Shells / Slug,Large Slot,575,510,65,179,20,450,32,9,6.2,65,77,5.1,1,3,
+Frontier 73C,Base,Frontier,Frontier,SingleBulletType,Compact,Default,Compact / Default,Large Slot,41,41,0,110,140,400,5,29,1.2,17.5,77,10.1,8,28,
+Frontier 73C FMJ,Base,Frontier,,SingleBulletType,Compact,FMJ,Compact / FMJ,Large Slot,91,41,50,110,125,330,8,29,1.2,17.5,77,10.1,8,28,Damage dropoff begins at 30m
+Frontier 73C High Velocity,Base,Frontier,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,101,41,60,104,160,500,8,29,1.2,17.5,77,10.1,8,18,
+Frontier 73C Incendiary,Base,Frontier,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Large Slot,81,41,40,110,140,400,5,29,1.2,17.5,77,10.1,8,28,Ignites Hunters in one shot up to 20m
+Frontier 73C Marksman,Marksman,Frontier,Frontier Marksman,SingleBulletType,Compact,Default,Compact / Default,Large Slot,45,45,0,110,140,400,5,29,1.3,25,69,10.1,8,28,
+Frontier 73C Marksman FMJ,Marksman,Frontier,,SingleBulletType,Compact,FMJ,Compact / FMJ,Large Slot,95,45,50,110,125,330,8,29,1.3,25,69,10.1,8,28,Damage dropoff begins at 30m
+Frontier 73C Marksman High Velocity,Marksman,Frontier,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,105,45,60,104,160,500,8,29,1.3,25,69,10.1,8,18,
+Frontier 73C Marksman Incendiary,Marksman,Frontier,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Large Slot,85,45,40,110,140,400,5,29,1.3,25,69,10.1,8,28,Ignites hunters in one shot up to 20m
+Frontier 73C Marksman Poison,Marksman,Frontier,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,95,45,50,110,140,400,5,29,1.3,25,69,10.1,8,28,Causes Medium Poison
+Frontier 73C Marksman Subsonic,Marksman,Frontier,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Large Slot,50,45,5,110,110,263,5,29,1.3,25,69,10.1,8,34,Reduced Sound
+Frontier 73C Poison,Base,Frontier,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,91,41,50,110,140,400,5,29,1.2,17.5,77,10.1,8,28,Causes Medium Poison
+Frontier 73C Silencer,Silencer,Frontier,Frontier Silencer,SingleBulletType,Compact,Default,Compact / Default,Large Slot,55,55,0,104,120,340,5,29,1.2,25,77,10.1,8,28,
+Frontier 73C Silencer FMJ,Silencer,Frontier,,SingleBulletType,Compact,FMJ,Compact / FMJ,Large Slot,105,55,50,104,105,272,8,29,1.2,25,77,10.1,8,28,Damage dropoff begins at 30m
+Frontier 73C Silencer High Velocity,Silencer,Frontier,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,115,55,60,98,135,440,7,29,1.2,25,77,10.1,8,18,
+Frontier 73C Silencer Incendiary,Silencer,Frontier,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Large Slot,95,55,40,104,120,340,5,29,1.2,25,77,10.1,8,28,Ignites Hunters in one shot up to 20m
+Frontier 73C Silencer Poison,Silencer,Frontier,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,105,55,50,104,120,340,5,29,1.2,25,77,10.1,8,28,Causes Medium Poison
+Frontier 73C Silencer Subsonic,Silencer,Frontier,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Large Slot,60,55,5,104,100,242,5,29,1.2,25,77,10.1,8,34,Reduced Sound
+Frontier 73C Subsonic,Base,Frontier,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Large Slot,46,41,5,110,110,263,5,29,1.2,17.5,77,10.1,8,34,Reduced Sound
+Hand Crossbow,Base,HandCrossbow,HandCrossbow,TwoSpecialType,Special,Default,Special / Default,Small Slot,30,30,0,195,15,100,1.2,14,4.5,25,82,4.3,1,8,
+Hand Crossbow Chaos Bolt,Base,HandCrossbow,,TwoSpecialType,Special,Chaos Bolt,Special / Chaos Bolt,Small Slot,40,30,10,65,15,50,1.2,14,4.5,25,82,4.3,1,5,Makes a random gunshot sound at the point of impact.
+Hand Crossbow Choke Bolt,Base,HandCrossbow,,TwoSpecialType,Special,Choke Bolt,Special / Choke Bolt,Small Slot,40,30,10,1,15,100,1.2,14,4.5,25,82,4.3,1,5,"Creates a small, short lived choke cloud at the point of impact."
+Hand Crossbow Dragon Bolt,Base,HandCrossbow,,TwoSpecialType,Special,Dragon Bolt,Special / Dragon Bolt,Small Slot,70,30,40,17,15,100,1.2,14,4.5,25,82,4.3,1,3,Causes Medium Burning
+Hand Crossbow Poison Bolt,Base,HandCrossbow,,TwoSpecialType,Special,Poison,Special / Poison,Small Slot,55,30,25,110,15,100,1.2,14,4.5,25,82,4.3,1,8,Causes Light Poison
+Haymaker,Base,Haymaker,Haymaker,BulletShellType,Long,Default,Long / Default,Medium Slot,279,279,0,122,65,530,23,18,1.3,40,100,21.8,9,9,
+Haymaker Buckshot,Base,Haymaker,Haymaker,BulletShellType,Shells,Default,Shells / Default,Medium Slot,0,0,0,200,20,350,35,10,6,40,100,5,1,3,
+Haymaker Dragon Breath,Base,Haymaker,,BulletShellType,Long,Dragon Breath,Long / Dragon Breath,Medium Slot,289,279,10,45,20,100,35,10,6,150,100,5,3,9,Causes Medium Burning
+Haymaker FMJ,Base,Haymaker,,BulletShellType,Long,FMJ,Long / FMJ,Medium Slot,339,279,60,122,50,375,25,18,1.3,40,100,21.8,9,9,Damage dropoff begins at 50m
+Haymaker Poison,Base,Haymaker,,BulletShellType,Long,Poison,Long / Poison,Medium Slot,339,279,60,122,65,350,23,18,1.3,40,100,21.8,9,9,Causes Intense Poison
+Haymaker Slug,Base,Haymaker,,BulletShellType,Long,Slug,Long / Slug,Medium Slot,344,279,65,159,20,350,35,10,6,115,100,5,1,2,
+Haymaker Starshell,Base,Haymaker,,BulletShellType,Long,Starshell,Long / Starshell,Medium Slot,284,279,5,3,20,75,5,10,6,50,100,5,1,9,Causes Intense Burning
+Homestead 78,Base,Homestead,Homestead,SingleShellType,Shells,Default,Shells / Default,Large Slot,Scarce,-1,0,220,30,450,20,24,0.3,20,77,4.7,2,8,
+Homestead 78 Dragon Breath,Base,Homestead,,SingleShellType,Shells,Dragon Breath,Shells / Dragon Breath,Large Slot,Scarce + 20,-1,-1,149,30,125,20,24,0.3,55,77,4.7,2,8,Causes Medium Burning
+Homestead 78 Flechette,Base,Homestead,,SingleShellType,Shells,Flechette,Shells / Flechette,Large Slot,Scarce + 40,-1,-1,162,30,450,20,24,0.3,5,77,4.7,2,8,Causes Medium Bleeding
+Homestead 78 Penny Shot,Base,Homestead,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,Scarce + 10,-1,-1,174,30,450,20,24,0.3,75,77,4.7,2,12,
+Homestead 78 Slug,Base,Homestead,,SingleShellType,Shells,Slug,Shells / Slug,Large Slot,Scarce + 130,-1,-1,195,30,450,20,24,0.3,70,77,4.7,2,5,
+Hunting Bow,Base,Bow,Bow,TwoSpecialType,Special,Default,Special / Default,Medium Slot,57,57,0,250,30,150,1,51,1.3,12.5,82,0.6,1,8,
+Hunting Bow Concertina Arrows,Base,Bow,,TwoSpecialType,Special,Concertina Arrows,Special / Concertina Arrows,Medium Slot,87,57,30,250,10,80,1,51,1.3,12.4,82,0.6,1,5,"Causes Medium Bleeding, Creates a small bundle of concertina wire (6-8 strands) on impact"
+Hunting Bow Frag Arrows,Base,Bow,,TwoSpecialType,Special,Frag Arrows,Special / Frag Arrows,Medium Slot,57 + Scarce,57,-1,250,10,80,1,51,1.3,12.5,82,0.6,1,5,"Causes Medium Bleeding, Explodes 2 seconds after release, causing bleeding"
+Hunting Bow Poison Arrows,Base,Bow,,TwoSpecialType,Special,Poison Arrows,Special / Poison Arrows,Medium Slot,82,57,25,250,30,150,1,51,1.3,12.3,82,0.6,1,5,Causes Intense Poison
+Infantry 73L,Base,Infantry,Infantry,SingleBulletType,Compact,Default,Compact / Default,Large Slot,78,78,0,110,145,400,3,35,1.2,17.5,77,17.9,18,20,
+Infantry 73L Bayonet,Bayonet,Infantry,Infantry Bayonet,SingleBulletType,Compact,Default,Compact / Default,Large Slot,88,88,0,110,145,400,3,35,1.2,17.5,77,17.9,18,20,
+Infantry 73L Bayonet FMJ,Bayonet,Infantry,,SingleBulletType,Compact,FMJ,Compact / FMJ,Large Slot,138,88,50,110,130,330,5,35,1.2,17.5,77,17.9,18,20,Damage dropoff begins at 30m
+Infantry 73L Bayonet High Velocity,Bayonet,Infantry,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,148,88,60,104,170,525,5,35,1.2,17.5,77,17.9,18,13,
+Infantry 73L Bayonet Incendiary,Bayonet,Infantry,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Large Slot,128,88,40,110,145,400,3,35,1.2,17.5,77,17.9,18,20,Ignites Hunters in one shot up to 20m
+Infantry 73L Bayonet Poison,Bayonet,Infantry,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,138,88,50,110,145,400,3,35,1.2,17.5,77,17.9,18,20,Causes Medium Poison
+Infantry 73L Bayonet Subsonic,Bayonet,Infantry,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Large Slot,93,88,5,110,115,263,3,35,1.2,17.5,77,17.9,18,24,Reduced Sound
+Infantry 73L FMJ,Base,Infantry,,SingleBulletType,Compact,FMJ,Compact / FMJ,Large Slot,128,78,50,110,130,330,5,35,1.2,17.5,77,17.9,18,20,Damage dropoff begins at 30m
+Infantry 73L High Velocity,Base,Infantry,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,138,78,60,104,170,525,5,35,1.2,17.5,77,17.9,18,13,
+Infantry 73L Incendiary,Base,Infantry,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Large Slot,118,78,40,110,145,400,3,35,1.2,17.5,77,17.9,18,20,Ignites Hunters in one shot up to 20m
+Infantry 73L Poison,Base,Infantry,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,128,78,50,110,145,400,3,35,1.2,17.5,77,17.9,18,20,Causes Medium Poison
+Infantry 73L Sniper,Sniper,Infantry,Infantry Sniper,SingleBulletType,Compact,Default,Compact / Default,Large Slot,90,90,0,110,145,400,3,35,1.2,17.5,69,17.9,18,20,
+Infantry 73L Sniper FMJ,Sniper,Infantry,,SingleBulletType,Compact,FMJ,Compact / FMJ,Large Slot,140,90,50,110,130,330,5,35,1.2,17.5,69,17.9,18,20,Damage dropoff begins at 30m
+Infantry 73L Sniper High Velocity,Sniper,Infantry,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,150,90,60,104,170,525,5,35,1.2,17.5,69,17.9,18,13,
+Infantry 73L Sniper Incendiary,Sniper,Infantry,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Large Slot,130,90,40,110,145,400,3,35,1.2,17.5,69,17.9,18,20,Ignites Hunters in one shot up to 20m
+Infantry 73L Sniper Poison,Sniper,Infantry,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,140,90,50,110,145,400,3,35,1.2,17.5,69,17.9,18,20,Causes Medium Poison
+Infantry 73L Sniper Subsonic,Sniper,Infantry,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Large Slot,95,90,5,110,115,263,3,35,1.2,17.5,69,17.9,18,24,Reduced Sound
+Infantry 73L Subsonic,Base,Infantry,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Large Slot,83,78,5,110,115,263,3,35,1.2,17.5,77,17.9,18,24,Reduced Sound
+Krag,Base,Krag,Krag,SingleBulletType,Long,Default,Long / Default,Large Slot,450,450,0,126,140,610,3,23,1.4,30,77,11.1,6,10,
+Krag Bayonet,Bayonet,Krag,Krag Bayonet,SingleBulletType,Long,Default,Long / Default,Large Slot,460,460,0,126,140,610,3,23,1.4,30,77,11.1,6,10,
+Krag Bayonet FMJ,Bayonet,Krag,,SingleBulletType,Long,FMJ,Long / FMJ,Large Slot,520,460,60,126,125,458,6,23,1.4,30,77,11.1,6,10,Damage dropoff begins at 50m
+Krag Bayonet Incendiary,Bayonet,Krag,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,530,460,70,126,140,610,3,23,1.4,30,77,11.1,6,10,Ignites Hunters in one shot up to 40m
+Krag Bayonet Subsonic,Bayonet,Krag,,SingleBulletType,Long,Subsonic,Long / Subsonic,Large Slot,480,460,20,126,110,336,3,23,1.4,30,77,11.1,6,12,Reduced Sound
+Krag FMJ,Base,Krag,,SingleBulletType,Long,FMJ,Long / FMJ,Large Slot,510,450,60,126,125,458,6,23,1.4,30,77,11.1,6,10,Damage dropoff begins at 50m
+Krag Incendiary,Base,Krag,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,520,450,70,126,140,610,3,23,1.4,30,77,11.1,6,10,Ignites Hunters in one shot up to 40m
+Krag Silencer,Silencer,Krag,Krag Silencer,SingleBulletType,Long,Default,Long / Default,Large Slot,517,517,0,126,130,518,3,23,1.4,30,77,11.1,6,10,
+Krag Silencer FMJ,Silencer,Krag,,SingleBulletType,Long,FMJ,Long / FMJ,Large Slot,577,517,60,126,120,414,6,23,1.4,30,77,11.1,6,10,Damage dropoff begins at 50m
+Krag Silencer Incendiary,Silencer,Krag,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,587,517,70,126,130,518,3,23,1.4,30,77,11.1,6,10,Ignites Hunters in one shot up to 40m
+Krag Silencer Subsonic,Silencer,Krag,,SingleBulletType,Long,Subsonic,Long / Subsonic,Large Slot,537,517,20,126,105,304,3,23,1.4,30,77,11.1,6,12,Reduced Sound
+Krag Sniper,Sniper,Krag,Krag Sniper,SingleBulletType,Long,Default,Long / Default,Large Slot,517,517,0,126,140,610,3,23,1.4,60,69,11.1,6,10,
+Krag Sniper FMJ,Sniper,Krag,,SingleBulletType,Long,FMJ,Long / FMJ,Large Slot,577,517,60,126,125,458,6,23,1.4,60,69,11.1,6,10,Damage dropoff begins at 50m
+Krag Sniper Incendiary,Sniper,Krag,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,587,517,70,126,140,610,3,23,1.4,60,69,11.1,6,10,Ignites Hunters in one shot up to 40m
+Krag Sniper Subsonic,Sniper,Krag,,SingleBulletType,Long,Subsonic,Long / Subsonic,Large Slot,537,517,20,126,110,336,3,23,1.4,60,69,11.1,6,12,Reduced Sound
+Krag Subsonic,Base,Krag,,SingleBulletType,Long,Subsonic,Long / Subsonic,Large Slot,470,450,20,126,110,336,3,23,1.4,30,77,11.1,6,12,Reduced Sound
+Lebel 1886,Base,Lebel,Lebel,SingleBulletType,Long,Default,Long / Default,Large Slot,397,397,0,132,140,630,9,20,1.8,30,77,18.7,10,5,
+Lebel 1886 Aperture,Aperture,Lebel,Lebel Aperture,SingleBulletType,Long,Default,Long / Default,Large Slot,417,417,0,132,140,630,9,20,1.8,30,69,18.7,10,5,
+Lebel 1886 Aperture Incendiary,Aperture,Lebel,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,487,417,70,132,140,630,9,20,1.8,30,69,18.7,10,5,Ignites Hunters in one shot up to 40m
+Lebel 1886 Aperture Spitzer,Aperture,Lebel,,SingleBulletType,Long,Spitzer,Long / Spitzer,Large Slot,567,417,150,113,165,850,13,20,1.8,30,69,18.7,10,3,
+Lebel 1886 Incendiary,Base,Lebel,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,467,397,70,132,140,630,9,20,1.8,30,77,18.7,10,5,Ignites Hunters in one shot up to 40m
+Lebel 1886 Marksman,Marksman,Lebel,Lebel Marksman,SingleBulletType,Long,Default,Long / Default,Large Slot,437,437,0,132,140,630,9,20,1.8,50,69,18.7,10,5,
+Lebel 1886 Marksman Incendiary,Marksman,Lebel,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,507,437,70,132,140,630,9,20,1.8,50,69,18.7,10,5,Ignites Hunters in one shot up to 40m
+Lebel 1886 Marksman Spitzer,Marksman,Lebel,,SingleBulletType,Long,Spitzer,Long / Spitzer,Large Slot,587,437,150,113,165,850,13,20,1.8,50,69,18.7,10,3,
+Lebel 1886 Spitzer,Base,Lebel,,SingleBulletType,Long,Spitzer,Long / Spitzer,Large Slot,547,397,150,113,165,850,13,20,1.8,30,77,18.7,10,3,
+Lebel 1886 Talon,Talon,Lebel,Lebel Talon,SingleBulletType,Long,Default,Long / Default,Large Slot,407,407,0,132,140,630,11,20,1.8,30,77,18.7,10,5,
+Lebel 1886 Talon Incendiary,Talon,Lebel,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,477,407,70,132,140,630,11,20,1.8,30,77,18.7,10,5,Ignites Hunters in one shot up to 40m
+Lebel 1886 Talon Spitzer,Talon,Lebel,,SingleBulletType,Long,Spitzer,Long / Spitzer,Large Slot,557,407,150,113,165,850,13,20,1.8,30,77,18.7,10,3,
+LeMat,Base,LeMat,LeMat,BulletShellType,Compact,Default,Compact / Default,Small Slot,83,83,0,97,75,375,6,25,1.3,40,128,15.8,9,18,
+LeMat Buckshot,Base,LeMat,LeMat,BulletShellType,Shells,Default,Shells / Default,Small Slot,0,83,0,200,10,350,35,12,5.2,45,128,3.9,1,3,
+LeMat Carbine,Carbine,LeMat,LeMat Carbine,BulletShellType,Compact,Default,Compact / Default,Large Slot,115,115,0,107,130,460,2.5,21,1.2,35,77,18.7,9,18,
+LeMat Carbine Buckshot,Carbine,LeMat,LeMat Carbine,BulletShellType,Shells,Default,Shells / Default,Large Slot,0,115,0,200,25,425,15,10,6.3,45,77,5,1,5,
+LeMat Carbine Dragon Breath,Carbine,LeMat,,BulletShellType,Compact,Dragon Breath,Compact / Dragon Breath,Large Slot,125,115,10,50,25,100,15,10,6.3,125,77,5,9,5,Causes Medium Burning
+LeMat Carbine FMJ,Carbine,LeMat,,BulletShellType,Compact,FMJ,Compact / FMJ,Large Slot,165,115,50,107,120,415,4.5,21,1.2,35,77,18.7,9,18,Damage dropoff begins at 30m
+LeMat Carbine Incendiary,Carbine,LeMat,,BulletShellType,Compact,Incendiary,Compact / Incendiary,Large Slot,155,115,40,107,130,460,2.5,21,1.2,35,77,18.7,9,18,Ignites Hunters in one shot up to 20m
+LeMat Carbine Marksman,Carbine Marksman,LeMat,LeMat Carbine Marksman,BulletShellType,Compact,Default,Compact / Default,Large Slot,127,127,0,107,130,460,2.5,21,1.2,55,69,18.7,9,18,
+LeMat Carbine Marksman Buckshot,Carbine Marksman,LeMat,LeMat Carbine Marksman,BulletShellType,Shells,Default,Shells / Default,Large Slot,0,127,0,200,25,425,15,10,6.3,45,69,5,1,5,
+LeMat Carbine Marksman Dragon Breath,Carbine Marksman,LeMat,,BulletShellType,Compact,Dragon Breath,Compact / Dragon Breath,Large Slot,137,127,10,50,25,100,15,10,6.3,125,69,5,1,5,Causes Medium Burning
+LeMat Carbine Marksman FMJ,Carbine Marksman,LeMat,,BulletShellType,Compact,FMJ,Compact / FMJ,Large Slot,177,127,50,107,120,415,4.5,21,1.2,55,69,18.7,9,18,Damage dropoff begins at 30m
+LeMat Carbine Marksman Incendiary,Carbine Marksman,LeMat,,BulletShellType,Compact,Incendiary,Compact / Incendiary,Large Slot,167,127,40,107,130,460,2.5,21,1.2,55,69,18.7,9,18,Ignites Hunters in one shot up to 20m
+LeMat Carbine Marksman Slug,Carbine Marksman,LeMat,,BulletShellType,Compact,Slug,Compact / Slug,Large Slot,192,127,65,165,25,425,15,10,6.3,95,69,5,1,4,
+LeMat Carbine Marksman Starshell,Carbine Marksman,LeMat,,BulletShellType,Compact,Starshell,Compact / Starshell,Large Slot,132,127,5,1,25,75,5,10,6.3,50,69,5,1,5,Causes Intense Burning
+LeMat Carbine Slug,Carbine,LeMat,,BulletShellType,Compact,Slug,Compact / Slug,Large Slot,180,115,65,165,25,425,15,10,6.3,95,77,5,1,4,
+LeMat Carbine Starshell,Carbine,LeMat,,BulletShellType,Compact,Starshell,Compact / Starshell,Large Slot,120,115,5,1,25,75,5,10,6.3,50,77,5,1,5,Causes Intense Burning
+LeMat Dragon Breath,Base,LeMat,,BulletShellType,Compact,Dragon Breath,Compact / Dragon Breath,Small Slot,93,83,10,40,10,100,35,12,5.2,150,128,3.9,1,3,Causes Medium Burning
+LeMat FMJ,Base,LeMat,,BulletShellType,Compact,FMJ,Compact / FMJ,Small Slot,133,83,50,97,70,335,8,25,1.3,40,128,15.8,9,18,Damage dropoff begins at 30m
+LeMat Incendiary,Base,LeMat,,BulletShellType,Compact,Incendiary,Compact / Incendiary,Small Slot,123,83,40,97,75,375,6,25,1.3,40,128,15.8,9,18,Ignites Hunters in one shot up to 20m
+LeMat Slug,Base,LeMat,,BulletShellType,Compact,Slug,Compact / Slug,Small Slot,148,83,65,157,10,350,35,12,5.2,115,128,3.9,1,2,
+LeMat Starshell,Base,LeMat,,BulletShellType,Compact,Starshell,Compact / Starshell,Small Slot,88,83,5,1,10,75,5,12,5.2,50,128,3.9,1,3,Causes Intense Burning
+Mako 1895,Base,Mako,Mako,SingleBulletType,Long,Default,Long / Default,Large Slot,360,360,0,128,115,540,11,20,1.6,27.5,77,13,7,8,
+Mako 1895 Aperture,Aperture,Mako,Mako Aperture,SingleBulletType,Long,Default,Long / Default,Large Slot,378,378,0,128,115,540,15,20,1.6,27.5,69,13,7,8,
+Mako 1895 Aperture Explosive,Aperture,Mako,,SingleBulletType,Long,Explosive,Long / Explosive,Large Slot,478,378,100,127,85,432,15,20,1.6,27.5,69,13,7,8,
+Mako 1895 Aperture FMJ,Aperture,Mako,,SingleBulletType,Long,FMJ,Long / FMJ,Large Slot,438,378,60,128,95,405,14,20,1.6,27.5,69,13,7,8,Damage dropoff begins at 50m
+Mako 1895 Claw,Claw,Mako,Mako Claw,SingleBulletType,Long,Default,Long / Default,Large Slot,370,370,0,128,115,540,11,20,1.6,27.5,77,13,7,8,
+Mako 1895 Claw Explosive,Claw,Mako,,SingleBulletType,Long,Explosive,Long / Explosive,Large Slot,470,370,100,127,85,432,11,20,1.6,27.5,77,13,7,8,
+Mako 1895 Claw FMJ,Claw,Mako,,SingleBulletType,Long,FMJ,Long / FMJ,Large Slot,430,370,60,128,95,405,14,20,1.6,27.5,77,13,7,8,Damage dropoff begins at 50m
+Mako 1895 Explosive,Base,Mako,,SingleBulletType,Long,Explosive,Long / Explosive,Large Slot,460,360,100,127,85,432,11,20,1.6,27.5,77,13,7,8,
+Mako 1895 FMJ,Base,Mako,,SingleBulletType,Long,FMJ,Long / FMJ,Large Slot,420,360,60,128,95,405,14,20,1.6,27.5,77,13,7,8,Damage dropoff begins at 50m
+Marathon,Base,Marathon,Marathon,SingleBulletType,Compact,Default,Compact / Default,Large Slot,68,68,0,113,140,430,7,31,1,15,77,19.2,16,24,
+Marathon FMJ,Base,Marathon,,SingleBulletType,Compact,FMJ,Compact / FMJ,Large Slot,118,68,50,113,125,360,9,31,1,15,77,19.2,16,24,Damage dropoff begins at 30m
+Marathon High Velocity,Base,Marathon,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,118,68,50,107,170,555,9,31,1,15,77,19.2,16,16,
+Marathon Incendiary,Base,Marathon,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Large Slot,108,68,40,113,140,430,7,31,1,15,77,19.2,16,24,Ignites Hunters in one shot up to 20m
+Marathon Poison,Base,Marathon,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,118,68,50,113,140,430,7,31,1,15,77,19.2,16,24,Causes Medium Poison
+Marathon Swift,Swift,Marathon,Marathon Swift,SingleBulletType,Compact,Default,Compact / Default,Large Slot,95,95,0,113,140,430,7,45,1,15,77,10,16,24,
+Marathon Swift FMJ,Swift,Marathon,,SingleBulletType,Compact,FMJ,Compact / FMJ,Large Slot,145,95,50,113,125,360,9,45,1,15,77,10,16,24,Damage dropoff begins at 30m
+Marathon Swift High Velocity,Swift,Marathon,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,145,95,50,107,170,555,9,45,1,15,77,10,16,16,
+Marathon Swift Incendiary,Swift,Marathon,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Large Slot,135,95,40,113,140,430,7,45,1,15,77,10,16,24,Ignites Hunters in one shot up to 20m
+Marathon Swift Poison,Swift,Marathon,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,145,95,50,113,140,430,7,45,1,15,77,10,16,24,Causes Medium Poison
+Martini-Henry,Base,Martini,Martini,TwoBulletType,Long,Default,Long / Default,Large Slot,122,122,0,143,125,400,12,18,3.5,40,77,2.7,1,10,
+Martini-Henry Deadeye,Deadeye,Martini,Martini Deadeye,TwoBulletType,Long,Default,Long / Default,Large Slot,128,128,0,143,125,400,12,18,3.5,50,69,2.7,1,10,
+Martini-Henry Deadeye Explosive,Deadeye,Martini,,TwoBulletType,Long,Explosive,Long / Explosive,Large Slot,178,128,50,138,95,300,12,18,3.5,50,69,2.7,1,10,
+Martini-Henry Deadeye FMJ,Deadeye,Martini,,TwoBulletType,Long,FMJ,Long / FMJ,Large Slot,158,128,30,143,110,320,16,18,3.5,50,69,2.7,1,10,Damage dropoff begins at 50m
+Martini-Henry Deadeye High Velocity,Deadeye,Martini,,TwoBulletType,Long,High Velocity,Long / High Velocity,Large Slot,163,128,35,136,140,500,16,18,3.5,50,69,2.7,1,7,
+Martini-Henry Deadeye Incendiary,Deadeye,Martini,,TwoBulletType,Long,Incendiary,Long / Incendiary,Large Slot,163,128,35,143,125,400,12,18,3.5,50,69,2.7,1,10,Ignites Hunters in one shot up to 40m
+Martini-Henry Explosive,Base,Martini,,TwoBulletType,Long,Explosive,Long / Explosive,Large Slot,172,122,50,138,95,300,12,18,3.5,40,77,2.7,1,10,
+Martini-Henry FMJ,Base,Martini,,TwoBulletType,Long,FMJ,Long / FMJ,Large Slot,152,122,30,143,110,320,16,18,3.5,40,77,2.7,1,10,Damage dropoff begins at 50m
+Martini-Henry High Velocity,Base,Martini,,TwoBulletType,Long,High Velocity,Long / High Velocity,Large Slot,157,122,35,136,140,500,16,18,3.5,40,77,2.7,1,7,
+Martini-Henry Incendiary,Base,Martini,,TwoBulletType,Long,Incendiary,Long / Incendiary,Large Slot,157,122,35,143,125,400,12,18,3.5,40,77,2.7,1,10,Ignites Hunters in one shot up to 40m
+Martini-Henry Ironside,Ironside,Martini,Martini Ironside,TwoBulletType,Long,Default,Long / Default,Large Slot,159,159,0,143,125,400,12,18,1.8,40,77,14.7,6,15,
+Martini-Henry Ironside Explosive,Ironside,Martini,,TwoBulletType,Long,Explosive,Long / Explosive,Large Slot,259,159,100,138,95,300,12,18,1.8,40,77,14.7,6,15,
+Martini-Henry Ironside FMJ,Ironside,Martini,,TwoBulletType,Long,FMJ,Long / FMJ,Large Slot,219,159,60,143,110,320,16,18,1.8,40,77,14.7,6,15,Damage dropoff begins at 50m
+Martini-Henry Ironside High Velocity,Ironside,Martini,,TwoBulletType,Long,High Velocity,Long / High Velocity,Large Slot,229,159,70,136,140,500,16,18,1.8,40,77,14.7,6,10,
+Martini-Henry Ironside Incendiary,Ironside,Martini,,TwoBulletType,Long,Incendiary,Long / Incendiary,Large Slot,229,159,70,143,125,400,12,18,1.8,40,77,14.7,6,15,Ignites Hunters in one shot up to 40m
+Martini-Henry Marksman,Marksman,Martini,Martini Marksman,TwoBulletType,Long,Default,Long / Default,Large Slot,134,134,0,143,125,400,12,18,3.5,60,69,2.7,1,10,
+Martini-Henry Marksman Explosive,Marksman,Martini,,TwoBulletType,Long,Explosive,Long / Explosive,Large Slot,184,134,50,138,95,300,12,18,3.5,60,69,2.7,1,10,
+Martini-Henry Marksman FMJ,Marksman,Martini,,TwoBulletType,Long,FMJ,Long / FMJ,Large Slot,164,134,30,143,110,320,16,18,3.5,60,69,2.7,1,10,Damage dropoff begins at 50m
+Martini-Henry Marksman High Velocity,Marksman,Martini,,TwoBulletType,Long,High Velocity,Long / High Velocity,Large Slot,169,134,35,136,140,500,16,18,3.5,60,69,2.7,1,7,
+Martini-Henry Marksman Incendiary,Marksman,Martini,,TwoBulletType,Long,Incendiary,Long / Incendiary,Large Slot,169,134,35,143,125,400,12,18,3.5,60,69,2.7,1,10,Ignites Hunters in one shot up to 40m
+Martini-Henry Riposte,Riposte,Martini,Martini Riposte,TwoBulletType,Long,Default,Long / Default,Large Slot,132,132,0,143,125,400,12,18,3.5,40,77,2.7,1,10,
+Martini-Henry Riposte Explosive,Riposte,Martini,,TwoBulletType,Long,Explosive,Long / Explosive,Large Slot,182,132,50,138,95,300,12,18,3.5,40,77,2.7,1,10,
+Martini-Henry Riposte FMJ,Riposte,Martini,,TwoBulletType,Long,FMJ,Long / FMJ,Large Slot,162,132,30,143,110,320,16,18,3.5,40,77,2.7,1,10,Damage dropoff begins at 50m
+Martini-Henry Riposte High Velocity,Riposte,Martini,,TwoBulletType,Long,High Velocity,Long / High Velocity,Large Slot,167,132,35,136,140,500,16,18,3.5,40,77,2.7,1,7,
+Martini-Henry Riposte Incendiary,Riposte,Martini,,TwoBulletType,Long,Incendiary,Long / Incendiary,Large Slot,167,132,35,143,125,400,12,18,3.5,40,77,2.7,1,10,Ignites Hunters in one shot up to 40m
+Maynard Sniper,Base,Maynard,Maynard,TwoBulletType,Medium,Default,Medium / Default,Large Slot,139,139,0,144,160,560,8,11,5.8,25,69,5,1,13,
+Maynard Sniper Dumdum,Base,Maynard,,TwoBulletType,Medium,Dumdum,Medium / Dumdum,Large Slot,139 + Scarce,139,-1,144,150,448,8,11,5.8,25,69,5,1,13,Causes Intense Bleeding
+Maynard Sniper High Velocity,Base,Maynard,,TwoBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,199,139,60,137,170,660,12,11,5.8,25,69,5,1,9,
+Maynard Sniper Silencer,Silencer,Maynard,Maynard Silencer,TwoBulletType,Medium,Default,Medium / Default,Large Slot,159,159,0,136,150,476,8,11,5.8,25,69,5,1,13,
+Maynard Sniper Silencer Dumdum,Silencer,Maynard,,TwoBulletType,Medium,Dumdum,Medium / Dumdum,Large Slot,159 + Scarce,159,-1,136,140,380,8,11,5.8,25,69,5,1,13,Causes Intense Bleeding
+Maynard Sniper Silencer High Velocity,Silencer,Maynard,,TwoBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,219,159,60,128,160,576,12,11,5.8,25,69,5,1,9,
+Maynard Sniper Silencer Subsonic,Silencer,Maynard,,TwoBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,164,159,5,136,130,289,8,11,5.8,25,69,5,1,15,Reduced Sound
+Maynard Sniper Subsonic,Base,Maynard,,TwoBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,144,139,5,144,130,319,8,11,5.8,25,69,5,1,15,Reduced Sound
+Mosin Obrez,Base,MosinObrez,MosinObrez,SingleBulletType,Long,Default,Long / Default,Medium Slot,290,290,0,126,100,520,16,26,1.9,55,100,3.7,5,10,
+Mosin Obrez Extended,Extended,MosinObrez,MosinObrez Extended,SingleBulletType,Long,Default,Long / Default,Medium Slot,350,350,0,126,100,520,19,29,1.9,55,100,8,15,10,
+Mosin Obrez Extended Incendiary,Extended,MosinObrez,,SingleBulletType,Long,Incendiary,Long / Incendiary,Medium Slot,420,350,70,126,100,520,19,29,1.9,55,100,8,15,10,Ignites Hunters in one shot up to 40m
+Mosin Obrez Extended Spitzer,Extended,MosinObrez,,SingleBulletType,Long,Spitzer,Long / Spitzer,Medium Slot,500,350,150,106,125,710,24,29,1.9,55,100,8,15,7,
+Mosin Obrez Incendiary,Base,MosinObrez,,SingleBulletType,Long,Incendiary,Long / Incendiary,Medium Slot,360,290,70,126,100,520,16,26,1.9,55,100,3.7,5,10,Ignites Hunters in one shot up to 40m
+Mosin Obrez Mace,Mace,MosinObrez,MosinObrez Mace,SingleBulletType,Long,Default,Long / Default,Medium Slot,300,300,0,126,100,520,19,26,1.9,55,100,3.7,5,10,
+Mosin Obrez Mace Incendiary,Mace,MosinObrez,,SingleBulletType,Long,Incendiary,Long / Incendiary,Medium Slot,370,300,70,126,100,520,19,26,1.9,55,100,3.7,5,10,Ignites Hunters in one shot up to 40m
+Mosin Obrez Mace Spitzer,Mace,MosinObrez,,SingleBulletType,Long,Spitzer,Long / Spitzer,Medium Slot,450,300,150,106,125,710,23,26,1.9,55,100,3.7,5,7,
+Mosin Obrez Match,Match,MosinObrez,MosinObrez Match,SingleBulletType,Long,Default,Long / Default,Large Slot,345,345,0,130,105,540,14,26,1.9,47.5,77,3.7,5,10,
+Mosin Obrez Match Incendiary,Match,MosinObrez,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,415,345,70,130,105,540,14,26,1.9,47.5,77,3.7,5,10,Ignites Hunters in one shot up to 40m
+Mosin Obrez Match Spitzer,Match,MosinObrez,,SingleBulletType,Long,Spitzer,Long / Spitzer,Large Slot,495,345,150,110,130,730,18,26,1.9,47.5,77,3.7,5,7,
+Mosin Obrez Sharpeye,Sharpeye,MosinObrez,MosinObrez Sharpeye,SingleBulletType,Long,Default,Long / Default,Large Slot,362,362,0,130,105,540,14,26,1.9,57.5,87,3.7,5,10,
+Mosin Obrez Sharpeye Incendiary,Sharpeye,MosinObrez,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,432,362,70,130,105,540,14,26,1.9,57.5,87,3.7,5,10,Ignites Hunters in one shot up to 40m
+Mosin Obrez Sharpeye Spitzer,Sharpeye,MosinObrez,,SingleBulletType,Long,Spitzer,Long / Spitzer,Large Slot,512,362,150,110,130,730,18,26,1.9,57.5,87,3.7,5,7,
+Mosin Obrez Spitzer,Base,MosinObrez,,SingleBulletType,Long,Spitzer,Long / Spitzer,Medium Slot,440,290,150,106,120,710,21,26,1.9,55,100,3.7,5,7,
+Mosin-Nagant,Base,Mosin,Mosin,SingleBulletType,Long,Default,Long / Default,Large Slot,620,620,0,136,135,615,10,26,1.9,35,77,3.7,5,10,
+Mosin-Nagant Avtomat,Avtomat,Mosin,Mosin Avtomat,SingleBulletType,Long,Default,Long / Default,Large Slot,1250,1250,0,136,135,615,8,75,0.1,100,133,11.4,15,0,
+Mosin-Nagant Avtomat Incendiary,Avtomat,Mosin,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,1320,1250,70,136,135,615,8,75,0.1,100,133,11.4,15,0,Ignites Hunters in one shot up to 40m
+Mosin-Nagant Avtomat Spitzer,Avtomat,Mosin,,SingleBulletType,Long,Spitzer,Long / Spitzer,Large Slot,1400,1250,150,117,160,820,9,75,0.1,100,133,11.4,15,0,
+Mosin-Nagant Bayonet,Bayonet,Mosin,Mosin Bayonet,SingleBulletType,Long,Default,Long / Default,Large Slot,630,630,0,136,135,615,10,26,1.9,35,77,3.7,5,10,
+Mosin-Nagant Bayonet Incendiary,Bayonet,Mosin,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,700,630,70,136,135,615,10,26,1.9,35,77,3.7,5,10,Ignites Hunters in one shot up to 40m
+Mosin-Nagant Bayonet Spitzer,Bayonet,Mosin,,SingleBulletType,Long,Spitzer,Long / Spitzer,Large Slot,780,630,150,117,160,820,15,26,1.9,35,77,3.7,5,7,
+Mosin-Nagant Incendiary,Base,Mosin,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,690,620,70,136,135,615,10,26,1.9,35,77,3.7,5,10,Ignites Hunters in one shot up to 40m
+Mosin-Nagant Sniper,Sniper,Mosin,Mosin Sniper,SingleBulletType,Long,Default,Long / Default,Large Slot,713,713,0,136,135,615,10,24,1.9,70,69,5.3,5,10,
+Mosin-Nagant Sniper Incendiary,Sniper,Mosin,,SingleBulletType,Long,Incendiary,Long / Incendiary,Large Slot,783,713,70,136,135,615,10,24,1.9,70,69,5.3,5,10,Ignites Hunters in one shot up to 40m
+Mosin-Nagant Sniper Spitzer,Sniper,Mosin,,SingleBulletType,Long,Spitzer,Long / Spitzer,Large Slot,863,713,150,117,160,820,15,24,1.9,70,69,5.3,5,7,
+Mosin-Nagant Spitzer,Base,Mosin,,SingleBulletType,Long,Spitzer,Long / Spitzer,Large Slot,770,620,150,117,160,820,15,26,1.9,35,77,3.7,5,7,
+Nagant M1895,Base,Nagant,Nagant,SingleBulletType,Compact,Default,Compact / Default,Small Slot,24,24,0,91,70,330,4,21,1.5,40,128,12.5,7,21,
+Nagant M1895 Deadeye,Deadeye,Nagant,Nagant Deadeye,SingleBulletType,Compact,Default,Compact / Default,Medium Slot,30,30,0,91,70,330,1.5,21,1.2,35,87,13.4,7,28,
+Nagant M1895 Deadeye Dumdum,Deadeye,Nagant,,SingleBulletType,Compact,Dumdum,Compact / Dumdum,Medium Slot,80,30,50,91,65,300,1.5,21,1.2,35,87,13.4,7,28,Causes Medium Bleeding
+Nagant M1895 Deadeye High Velocity,Deadeye,Nagant,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Medium Slot,90,30,60,87,80,405,3.3,21,1.2,35,87,13.4,7,21,
+Nagant M1895 Deadeye Poison,Deadeye,Nagant,,SingleBulletType,Compact,Poison,Compact / Poison,Medium Slot,80,30,50,91,70,330,1.5,21,1.2,35,87,13.4,7,28,Causes Medium Poison
+Nagant M1895 Deadeye Subsonic,Deadeye,Nagant,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Medium Slot,35,30,5,91,55,238,1.5,21,1.2,35,87,13.4,7,34,Reduced Sound
+Nagant M1895 Dumdum,Base,Nagant,,SingleBulletType,Compact,Dumdum,Compact / Dumdum,Small Slot,74,24,50,91,65,300,4,21,1.5,40,128,12.5,7,21,Causes Medium Bleeding
+Nagant M1895 High Velocity,Base,Nagant,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Small Slot,84,24,60,87,80,405,6,21,1.5,40,128,12.5,7,14,
+Nagant M1895 Poison,Base,Nagant,,SingleBulletType,Compact,Poison,Compact / Poison,Small Slot,74,24,50,91,70,330,4,21,1.5,40,128,12.5,7,21,Causes Medium Poison
+Nagant M1895 Precision,Precision,Nagant,Nagant Precision,SingleBulletType,Compact,Default,Compact / Default,Medium Slot,29,29,0,91,70,330,1.5,21,1,27.5,87,13.4,7,28,
+Nagant M1895 Precision Dumdum,Precision,Nagant,,SingleBulletType,Compact,Dumdum,Compact / Dumdum,Medium Slot,79,29,50,91,65,300,1.5,21,1,27.5,87,13.4,7,28,Causes Medium Bleeding
+Nagant M1895 Precision High Velocity,Precision,Nagant,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Medium Slot,89,29,60,87,80,405,3.3,21,1,27.5,87,13.4,7,21,
+Nagant M1895 Precision Poison,Precision,Nagant,,SingleBulletType,Compact,Poison,Compact / Poison,Medium Slot,79,29,50,91,70,330,1.5,21,1,27.5,87,13.4,7,28,Causes Medium Poison
+Nagant M1895 Precision Subsonic,Precision,Nagant,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Medium Slot,34,29,5,91,55,238,1.5,21,1,27.5,87,13.4,7,34,Reduced Sound
+Nagant M1895 Silencer,Silencer,Nagant,Nagant Silencer,SingleBulletType,Compact,Default,Compact / Default,Small Slot,27,27,0,85,60,280,4,21,1.5,45,128,12.5,7,21,
+Nagant M1895 Silencer Dumdum,Silencer,Nagant,,SingleBulletType,Compact,Dumdum,Compact / Dumdum,Small Slot,77,27,50,85,50,224,4,21,1.5,45,128,12.5,7,21,Causes Medium Bleeding
+Nagant M1895 Silencer High Velocity,Silencer,Nagant,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Small Slot,87,27,60,81,70,355,6,21,1.5,45,128,12.5,7,14,
+Nagant M1895 Silencer Poison,Silencer,Nagant,,SingleBulletType,Compact,Poison,Compact / Poison,Small Slot,77,27,50,85,60,280,4,21,1.5,45,128,12.5,7,21,Causes Medium Poison
+Nagant M1895 Silencer Subsonic,Silencer,Nagant,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Small Slot,32,27,5,85,50,221,4,21,1.5,45,128,12.5,7,26,Reduced Sound
+Nagant M1895 Subsonic,Base,Nagant,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Small Slot,29,24,5,91,55,238,4,21,1.5,40,128,12.5,7,14,Reduced Sound
+New Army,Base,NewArmy,NewArmy,SingleBulletType,Compact,Default,Compact / Default,Small Slot,90,90,0,97,75,230,5,30,0.5,47.5,128,9.5,6,12,
+New Army Dumdum,Base,NewArmy,,SingleBulletType,Compact,Dumdum,Compact / Dumdum,Small Slot,140,90,50,97,70,200,5,30,0.5,47.5,128,9.5,6,12,Causes Medium Bleeding
+New Army FMJ,Base,NewArmy,,SingleBulletType,Compact,FMJ,Compact / FMJ,Small Slot,140,90,50,97,70,200,7,30,0.5,47.5,128,9.5,6,12,Damage dropoff begins at 30m
+New Army Swift,Swift,NewArmy,NewArmy Swift,SingleBulletType,Compact,Default,Compact / Default,Small Slot,108,108,0,97,75,230,5,40,0.5,47.5,128,5.6,6,12,
+New Army Swift Dumdum,Swift,NewArmy,,SingleBulletType,Compact,Dumdum,Compact / Dumdum,Small Slot,158,108,50,97,70,200,5,40,0.5,47.5,128,5.6,6,12,Causes Medium Bleeding
+New Army Swift FMJ,Swift,NewArmy,,SingleBulletType,Compact,FMJ,Compact / FMJ,Small Slot,158,108,50,97,70,200,7,40,0.5,47.5,128,5.6,6,12,Damage dropoff begins at 30m
+Nitro Express,Base,Nitro,Nitro,SingleSpecialType,Special,Default,Special / Default,Large Slot,1015,1015,0,364,45,550,40,21,0.7,62.5,77,4.8,2,4,
+Nitro Express Explosive,Base,Nitro,,SingleSpecialType,Special,Explosive,Special / Explosive,Large Slot,1215,1015,200,163,20,410,40,21,0.7,62.5,77,4.8,2,4,
+Nitro Express Shredder,Base,Nitro,,SingleSpecialType,Special,Shredder,Special / Shredder,Large Slot,1240,1015,225,364,40,495,40,21,0.7,62.5,77,4.8,2,4,Causes Intense Bleeding
+Officer,Base,Officer,Officer,SingleBulletType,Compact,Default,Compact / Default,Small Slot,96,96,0,91,70,330,5,28,0.5,50,128,12.8,7,14,
+Officer Brawler,Brawler,Officer,Officer Brawler,SingleBulletType,Compact,Default,Compact / Default,Small Slot,106,106,0,91,70,330,5,28,0.5,50,128,12.8,7,14,
+Officer Brawler Dumdum,Brawler,Officer,,SingleBulletType,Compact,Dumdum,Compact / Dumdum,Small Slot,106 + Scarce,106,-1,91,65,300,5,28,0.5,50,128,12.8,7,14,Causes Medium Bleeding
+Officer Brawler High Velocity,Brawler,Officer,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Small Slot,166,106,60,87,80,405,7.5,28,0.5,50,128,12.8,7,9,
+Officer Brawler Poison,Brawler,Officer,,SingleBulletType,Compact,Poison,Compact / Poison,Small Slot,156,106,50,91,70,330,5,28,0.5,50,128,12.8,7,14,Causes Medium Poison
+Officer Brawler Subsonic,Brawler,Officer,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Small Slot,111,106,5,91,55,238,5,28,0.5,50,128,12.8,7,16,Reduced Sound
+Officer Carbine,Carbine,Officer,Officer Carbine,SingleBulletType,Compact,Default,Compact / Default,Large Slot,183,183,0,104,90,360,4,28,0.5,25,77,13.4,7,14,
+Officer Carbine Deadeye,Carbine Deadeye,Officer,Officer Carbine Deadeye,SingleBulletType,Compact,Default,Compact / Default,Large Slot,192,192,0,104,90,360,4,28,0.5,40,69,13.4,7,14,
+Officer Carbine Deadeye Dumdum,Carbine Deadeye,Officer,,SingleBulletType,Compact,Dumdum,Compact / Dumdum,Large Slot,192 + Scarce,192,-1,104,85,330,4,28,0.5,40,69,13.4,7,14,Causes Medium Bleeding
+Officer Carbine Deadeye High Velocity,Carbine Deadeye,Officer,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,252,192,60,98,100,460,7.5,28,0.5,40,69,13.4,7,9,
+Officer Carbine Deadeye Poison,Carbine Deadeye,Officer,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,242,192,50,104,90,360,4,28,0.5,40,69,13.4,7,14,Causes Medium Poison
+Officer Carbine Deadeye Subsonic,Carbine Deadeye,Officer,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Large Slot,197,192,5,104,70,249,4,28,0.5,40,69,13.4,7,16,Reduced Sound
+Officer Carbine Dumdum,Carbine,Officer,,SingleBulletType,Compact,Dumdum,Compact / Dumdum,Large Slot,183 + Scarce,183,-1,104,85,330,4,28,0.5,25,77,13.4,7,14,Causes Medium Bleeding
+Officer Carbine High Velocity,Carbine,Officer,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,243,183,60,98,100,460,6.5,28,0.5,25,77,13.4,7,9,
+Officer Carbine Poison,Carbine,Officer,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,233,183,50,104,90,360,4,28,0.5,25,77,13.4,7,14,Causes Medium Poison
+Officer Carbine Subsonic,Carbine,Officer,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Large Slot,188,183,5,104,70,249,4,28,0.5,25,77,13.4,7,16,Reduced Sound
+Officer Dumdum,Base,Officer,,SingleBulletType,Compact,Dumdum,Compact / Dumdum,Small Slot,96 + Scarce,96,-1,91,65,300,5,28,0.5,50,128,12.8,7,14,Causes Medium Bleeding
+Officer High Velocity,Base,Officer,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Small Slot,156,96,60,87,80,405,7.5,28,0.5,50,128,12.8,7,9,
+Officer Poison,Base,Officer,,SingleBulletType,Compact,Poison,Compact / Poison,Small Slot,146,96,50,91,70,330,5,28,0.5,50,128,12.8,7,14,Causes Medium Poison
+Officer Subsonic,Base,Officer,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Small Slot,101,96,5,91,55,238,5,28,0.5,50,128,12.8,7,16,Reduced Sound
+Pax,Base,Pax,Pax,SingleBulletType,Medium,Default,Medium / Default,Small Slot,80,80,0,110,65,330,10,22,1.4,32.5,128,11.2,6,12,
+Pax Claw,Claw,Pax,Pax Claw,SingleBulletType,Medium,Default,Medium / Default,Small Slot,90,90,0,110,65,330,10,22,1.4,32.5,128,11.2,6,12,
+Pax Claw Dumdum,Claw,Pax,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Small Slot,140,90,50,110,60,300,10,22,1.4,32.5,128,11.2,6,12,Causes Medium Bleeding
+Pax Claw FMJ,Claw,Pax,,SingleBulletType,Medium,FMJ,Medium / FMJ,Small Slot,140,90,50,110,60,300,12,22,1.4,32.5,128,11.2,6,12,Damage dropoff begins at 40m
+Pax Claw High Velocity,Claw,Pax,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Small Slot,150,90,60,104,70,405,12,22,1.4,32.5,128,11.2,6,8,
+Pax Claw Incendiary,Claw,Pax,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Small Slot,130,90,40,110,65,330,10,22,1.4,32.5,128,11.2,6,12,Ignites Hunters in one shot up to 30m
+Pax Claw Poison,Claw,Pax,,SingleBulletType,Medium,Poison,Medium / Poison,Small Slot,140,90,50,110,65,330,10,22,1.4,32.5,128,11.2,6,12,Causes Medium Poison
+Pax Dumdum,Base,Pax,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Small Slot,130,80,50,110,60,300,10,22,1.4,32.5,128,11.2,6,12,Causes Medium Bleeding
+Pax FMJ,Base,Pax,,SingleBulletType,Medium,FMJ,Medium / FMJ,Small Slot,130,80,50,110,60,300,12,22,1.4,32.5,128,11.2,6,12,Damage dropoff begins at 40m
+Pax High Velocity,Base,Pax,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Small Slot,140,80,60,104,70,405,12,22,1.4,32.5,128,11.2,6,8,
+Pax Incendiary,Base,Pax,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Small Slot,120,80,40,110,65,330,10,22,1.4,32.5,128,11.2,6,12,Ignites Hunters in one shot up to 30m
+Pax Poison,Base,Pax,,SingleBulletType,Medium,Poison,Medium / Poison,Small Slot,130,80,50,110,65,330,10,22,1.4,32.5,128,11.2,6,12,Causes Medium Poison
+Pax Trueshot,Trueshot,Pax,Pax Trueshot,SingleBulletType,Medium,Default,Medium / Default,Small Slot,141,141,0,114,80,410,16,18,1.6,27.5,128,11.2,6,12,
+Pax Trueshot Dumdum,Trueshot,Pax,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Small Slot,191,141,50,114,70,405,16,18,1.6,27.5,128,11.2,6,12,Causes Medium Bleeding
+Pax Trueshot FMJ,Trueshot,Pax,,SingleBulletType,Medium,FMJ,Medium / FMJ,Small Slot,191,141,50,114,65,405,18,18,1.6,27.5,128,11.2,6,12,Damage dropoff begins at 40m
+Pax Trueshot High Velocity,Trueshot,Pax,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Small Slot,201,141,60,108,90,510,20,18,1.6,27.5,128,11.2,6,8,
+Pax Trueshot Incendiary,Trueshot,Pax,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Small Slot,181,141,40,114,80,410,16,18,1.6,27.5,128,11.2,6,12,Ignites Hunters in one shot up to 30m
+Pax Trueshot Poison,Trueshot,Pax,,SingleBulletType,Medium,Poison,Medium / Poison,Small Slot,191,141,50,114,80,410,16,18,1.6,27.5,128,11.2,6,12,Causes Medium Poison
+Ranger 73,Base,Ranger,Ranger,SingleBulletType,Compact,Default,Compact / Default,Large Slot,75,75,0,110,140,400,4,31,1.2,17.5,77,16.4,16,20,
+Ranger 73 Aperture,Aperture,Ranger,Ranger Aperture,SingleBulletType,Compact,Default,Compact / Default,Large Slot,79,79,0,110,140,400,4,31,1.2,17.5,69,16.4,16,20,
+Ranger 73 Aperture FMJ,Aperture,Ranger,,SingleBulletType,Compact,FMJ,Compact / FMJ,Large Slot,129,79,50,110,125,330,6,31,1.2,17.5,69,16.4,16,20,Damage dropoff begins at 30m
+Ranger 73 Aperture High Velocity,Aperture,Ranger,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,139,79,60,104,160,500,6,31,1.2,17.5,69,16.4,16,13,
+Ranger 73 Aperture Incendiary,Aperture,Ranger,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Large Slot,119,79,40,110,140,400,4,31,1.2,17.5,69,16.4,16,20,Ignites Hunters in one shot up to 20m
+Ranger 73 Aperture Poison,Aperture,Ranger,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,129,79,50,110,140,400,4,31,1.2,17.5,69,16.4,16,20,Causes Medium Poison
+Ranger 73 Aperture Subsonic,Aperture,Ranger,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Large Slot,84,79,5,110,110,263,4,31,1.2,17.5,69,16.4,16,24,Reduced Sound
+Ranger 73 FMJ,Base,Ranger,,SingleBulletType,Compact,FMJ,Compact / FMJ,Large Slot,125,75,50,110,125,330,6,31,1.2,17.5,77,16.4,16,20,Damage dropoff begins at 30m
+Ranger 73 High Velocity,Base,Ranger,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,135,75,60,104,160,500,6,31,1.2,17.5,77,16.4,16,13,
+Ranger 73 Incendiary,Base,Ranger,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Large Slot,115,75,40,110,140,400,4,31,1.2,17.5,77,16.4,16,20,Ignites Hunters in one shot up to 20m
+Ranger 73 Poison,Base,Ranger,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,125,75,50,110,140,400,4,31,1.2,17.5,77,16.4,16,20,Causes Medium Poison
+Ranger 73 Subsonic,Base,Ranger,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Large Slot,80,75,5,110,110,263,4,31,1.2,17.5,77,16.4,16,24,Reduced Sound
+Ranger 73 Swift,Swift,Ranger,Ranger Swift,SingleBulletType,Compact,Default,Compact / Default,Large Slot,128,128,0,110,140,400,4,41,1.2,17.5,77,8.4,16,20,
+Ranger 73 Swift FMJ,Swift,Ranger,,SingleBulletType,Compact,FMJ,Compact / FMJ,Large Slot,178,128,50,110,125,330,6,41,1.2,17.5,77,8.4,16,20,Damage dropoff begins at 30m
+Ranger 73 Swift High Velocity,Swift,Ranger,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,188,128,60,104,160,500,6,41,1.2,17.5,77,8.4,16,13,
+Ranger 73 Swift Incendiary,Swift,Ranger,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Large Slot,168,128,40,110,140,400,4,41,1.2,17.5,77,8.4,16,20,Ignites Hunters in one shot up to 20m
+Ranger 73 Swift Poison,Swift,Ranger,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,178,128,50,110,140,400,4,41,1.2,17.5,77,8.4,16,20,Causes Medium Poison
+Ranger 73 Swift Subsonic,Swift,Ranger,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Large Slot,133,128,5,110,110,263,4,41,1.2,17.5,77,8.4,16,24,Reduced Sound
+Ranger 73 Talon,Talon,Ranger,Ranger Talon,SingleBulletType,Compact,Default,Compact / Default,Large Slot,85,85,0,110,140,400,4,31,1.2,17.5,77,16.4,16,20,
+Ranger 73 Talon FMJ,Talon,Ranger,,SingleBulletType,Compact,FMJ,Compact / FMJ,Large Slot,135,85,50,110,125,330,6,31,1.2,17.5,77,16.4,16,20,Damage dropoff begins at 30m
+Ranger 73 Talon High Velocity,Talon,Ranger,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Large Slot,145,85,60,104,160,500,6,31,1.2,17.5,77,16.4,16,13,
+Ranger 73 Talon Incendiary,Talon,Ranger,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Large Slot,125,85,40,110,140,400,4,31,1.2,17.5,77,16.4,16,20,Ignites Hunters in one shot up to 20m
+Ranger 73 Talon Poison,Talon,Ranger,,SingleBulletType,Compact,Poison,Compact / Poison,Large Slot,135,85,50,110,140,400,4,31,1.2,17.5,77,16.4,16,20,Causes Medium Poison
+Ranger 73 Talon Subsonic,Talon,Ranger,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Large Slot,90,85,5,110,110,263,4,31,1.2,17.5,77,16.4,16,24,Reduced Sound
+Rival 78,Base,Rival,Rival,SingleShellType,Shells,Default,Shells / Default,Large Slot,150,150,0,184,25,425,20,24,0.3,45,77,4.7,2,8,
+Rival 78 Dragon Breath,Base,Rival,,SingleShellType,Shells,Dragon Breath,Shells / Dragon Breath,Large Slot,170,150,20,113,25,100,20,24,0.3,80,77,4.7,2,8,Causes Medium Burning
+Rival 78 Flechette,Base,Rival,,SingleShellType,Shells,Flechette,Shells / Flechette,Large Slot,190,150,40,126,25,425,20,24,0.3,30,77,4.7,2,8,Causes Medium Bleeding
+Rival 78 Mace,Mace,Rival,Rival Mace,SingleShellType,Shells,Default,Shells / Default,Medium Slot,135,135,0,158,20,350,34,24,0.3,55,133,4.7,2,6,
+Rival 78 Mace Dragon Breath,Mace,Rival,,SingleShellType,Shells,Dragon Breath,Shells / Dragon Breath,Medium Slot,155,135,20,89,20,100,34,24,0.3,160,133,4.7,2,6,Causes Medium Burning
+Rival 78 Mace Flechette,Mace,Rival,,SingleShellType,Shells,Flechette,Shells / Flechette,Medium Slot,175,135,40,103,20,350,34,24,0.3,35,133,4.7,2,6,Causes Medium Bleeding
+Rival 78 Mace Penny Shot,Mace,Rival,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Medium Slot,145,135,10,62,20,350,34,24,0.3,125,133,4.7,2,9,
+Rival 78 Mace Slug,Mace,Rival,,SingleShellType,Shells,Slug,Shells / Slug,Medium Slot,265,135,130,157,20,350,34,24,0.3,150,133,4.7,2,4,
+Rival 78 Penny Shot,Base,Rival,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,160,150,10,138,25,425,20,24,0.3,100,77,4.7,2,12,
+Rival 78 Shorty,Shorty,Rival,Rival Shorty,SingleShellType,Shells,Default,Shells / Default,Medium Slot,125,125,0,158,20,350,30,24,0.3,55,133,4.7,2,6,
+Rival 78 Shorty Dragon Breath,Shorty,Rival,,SingleShellType,Shells,Dragon Breath,Shells / Dragon Breath,Medium Slot,145,125,20,89,20,100,30,24,0.3,160,133,4.7,2,6,Causes Medium Burning
+Rival 78 Shorty Flechette,Shorty,Rival,,SingleShellType,Shells,Flechette,Shells / Flechette,Medium Slot,165,125,40,103,20,350,30,24,0.3,35,133,4.7,2,6,Causes Medium Bleeding
+Rival 78 Shorty Penny Shot,Shorty,Rival,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Medium Slot,135,125,10,62,20,350,30,24,0.3,125,133,4.7,2,9,
+Rival 78 Shorty Slug,Shorty,Rival,,SingleShellType,Shells,Slug,Shells / Slug,Medium Slot,255,125,130,157,20,350,30,24,0.3,105,133,4.7,2,4,
+Rival 78 Slug,Base,Rival,,SingleShellType,Shells,Slug,Shells / Slug,Large Slot,280,150,130,165,25,425,20,24,0.3,95,77,4.7,2,5,
+Rival 78 Trauma,Trauma,Rival,Rival Trauma,SingleShellType,Shells,Default,Shells / Default,Large Slot,160,160,0,184,25,425,22,24,0.3,45,77,4.7,2,8,
+Rival 78 Trauma Dragon Breath,Trauma,Rival,,SingleShellType,Shells,Dragon Breath,Shells / Dragon Breath,Large Slot,180,160,20,113,25,100,22,24,0.3,80,77,4.7,2,8,Causes Medium Burning
+Rival 78 Trauma Flechette,Trauma,Rival,,SingleShellType,Shells,Flechette,Shells / Flechette,Large Slot,200,160,40,126,25,425,22,24,0.3,30,77,4.7,2,8,Causes Medium Bleeding
+Rival 78 Trauma Penny Shot,Trauma,Rival,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,170,160,10,138,25,425,22,24,0.3,100,77,4.7,2,12,
+Rival 78 Trauma Slug,Trauma,Rival,,SingleShellType,Shells,Slug,Shells / Slug,Large Slot,290,160,130,165,25,425,22,24,0.3,95,77,4.7,2,5,
+Romero 77,Base,Romero,Romero,TwoShellType,Shells,Default,Shells / Default,Large Slot,66,66,0,220,30,450,20,16,4,20,77,3.4,1,6,
+Romero 77 Alamo,Alamo,Romero,Romero Alamo,TwoShellType,Shells,Default,Shells / Default,Large Slot,98,98,0,220,30,450,20,13,2.8,20,77,18.2,5,5,
+Romero 77 Alamo Dragon Breath,Alamo,Romero,,TwoShellType,Shells,Dragon Breath,Shells / Dragon Breath,Large Slot,118,98,20,144,30,100,20,13,2.8,50,77,18.2,5,5,Causes Medium Burning
+Romero 77 Alamo Penny Shot,Alamo,Romero,,TwoShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,108,98,10,188,30,450,20,13,2.8,75,77,18.2,5,8,
+Romero 77 Alamo Slug,Alamo,Romero,,TwoShellType,Shells,Slug,Shells / Slug,Large Slot,228,98,130,179,30,450,20,13,2.8,65,77,18.2,5,3,
+Romero 77 Alamo Starshell,Alamo,Romero,,TwoShellType,Shells,Starshell,Shells / Starshell,Large Slot,108,98,10,3,30,75,3,13,2.8,50,77,18.2,5,3,Causes Intense Burning
+Romero 77 Dragon Breath,Base,Romero,,TwoShellType,Shells,Dragon Breath,Shells / Dragon Breath,Large Slot,76,66,10,144,30,100,20,16,4,50,77,3.4,1,6,Causes Medium Burning
+Romero 77 Hatchet,Hatchet,Romero,Romero Hatchet,TwoShellType,Shells,Default,Shells / Default,Medium Slot,56,56,0,214,20,375,30,16,4,25,108,3.7,1,5,
+Romero 77 Hatchet Dragon Breath,Hatchet,Romero,,TwoShellType,Shells,Dragon Breath,Shells / Dragon Breath,Medium Slot,66,56,10,115,20,100,30,16,4,120,108,3.7,1,5,Causes Medium Burning
+Romero 77 Hatchet Penny Shot,Hatchet,Romero,,TwoShellType,Shells,Penny Shot,Shells / Penny Shot,Medium Slot,61,56,5,97,20,375,30,16,4,100,108,3.7,1,8,
+Romero 77 Hatchet Slug,Hatchet,Romero,,TwoShellType,Shells,Slug,Shells / Slug,Medium Slot,121,56,65,157,20,375,30,16,4,125,108,3.7,1,3,
+Romero 77 Hatchet Starshell,Hatchet,Romero,,TwoShellType,Shells,Starshell,Shells / Starshell,Medium Slot,61,56,5,2,20,75,5,16,4,50,108,3.7,1,3,Causes Intense Burning
+Romero 77 Penny Shot,Base,Romero,,TwoShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,71,66,5,192,30,450,20,16,4,75,77,3.4,1,10,
+Romero 77 Shorty,Shorty,Romero,Romero Shorty,TwoShellType,Shells,Default,Shells / Default,Medium Slot,46,46,0,214,20,375,30,16,4,25,133,3.2,1,5,
+Romero 77 Shorty Dragon Breath,Shorty,Romero,,TwoShellType,Shells,Dragon Breath,Shells / Dragon Breath,Medium Slot,56,46,10,115,20,100,30,16,4,120,133,3.2,1,5,Causes Medium Burning
+Romero 77 Shorty Penny Shot,Shorty,Romero,,TwoShellType,Shells,Penny Shot,Shells / Penny Shot,Medium Slot,51,46,5,97,20,375,30,16,4,100,133,3.2,1,8,
+Romero 77 Shorty Slug,Shorty,Romero,,TwoShellType,Shells,Slug,Shells / Slug,Medium Slot,111,46,65,157,20,375,30,16,4,125,133,3.2,1,3,
+Romero 77 Shorty Starshell,Shorty,Romero,,TwoShellType,Shells,Starshell,Shells / Starshell,Medium Slot,51,46,5,2,20,75,5,16,4,50,133,3.2,1,3,Causes Intense Burning
+Romero 77 Slug,Base,Romero,,TwoShellType,Shells,Slug,Shells / Slug,Large Slot,131,66,65,179,30,450,20,16,4,65,77,3.4,1,4,
+Romero 77 Starshell,Base,Romero,,TwoShellType,Shells,Starshell,Shells / Starshell,Large Slot,71,66,5,3,30,75,3,16,4,50,77,3.4,1,4,Causes Intense Burning
+Romero 77 Talon,Talon,Romero,Romero Talon,TwoShellType,Shells,Default,Shells / Default,Large Slot,76,76,0,220,30,425,25,16,4,20,77,3.4,1,6,
+Romero 77 Talon Dragon Breath,Talon,Romero,,TwoShellType,Shells,Dragon Breath,Shells / Dragon Breath,Large Slot,86,76,10,144,30,100,25,16,4,50,77,3.4,1,6,Causes Medium Burning
+Romero 77 Talon Penny Shot,Talon,Romero,,TwoShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,81,76,5,192,30,425,25,16,4,75,77,3.4,1,10,
+Romero 77 Talon Slug,Talon,Romero,,TwoShellType,Shells,Slug,Shells / Slug,Large Slot,141,76,65,179,30,425,25,16,4,65,77,3.4,1,4,
+Romero 77 Talon Starshell,Talon,Romero,,TwoShellType,Shells,Starshell,Shells / Starshell,Large Slot,81,76,5,3,30,75,3,16,4,50,77,3.4,1,4,Causes Intense Burning
+Scottfield,Base,Scottfield,Scottfield,SingleBulletType,Medium,Default,Medium / Default,Small Slot,77,77,0,107,65,280,9,24,1.5,28.1,128,9,6,12,
+Scottfield Brawler,Brawler,Scottfield,Scottfield Brawler,SingleBulletType,Medium,Default,Medium / Default,Small Slot,87,87,0,107,60,280,12,24,1.5,36,128,9,6,12,
+Scottfield Brawler Dumdum,Brawler,Scottfield,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Small Slot,137,87,50,107,55,250,12,24,1.5,36,128,9,6,12,Causes Medium Bleeding
+Scottfield Brawler FMJ,Brawler,Scottfield,,SingleBulletType,Medium,FMJ,Medium / FMJ,Small Slot,137,87,50,107,55,250,16,24,1.5,36,128,9,6,12,Damage dropoff begins at 40m
+Scottfield Brawler High Velocity,Brawler,Scottfield,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Small Slot,147,87,60,101,70,355,16,24,1.5,36,128,9,6,8,
+Scottfield Brawler Incendiary,Brawler,Scottfield,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Small Slot,127,87,40,107,60,280,12,24,1.5,36,128,9,6,12,Ignites Hunters in one shot up to 30m
+Scottfield Dumdum,Base,Scottfield,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Small Slot,127,77,50,107,60,250,9,24,1.5,28.1,128,9,6,12,Causes Medium Bleeding
+Scottfield FMJ,Base,Scottfield,,SingleBulletType,Medium,FMJ,Medium / FMJ,Small Slot,127,77,50,107,60,250,12,24,1.5,28.1,128,9,6,12,Damage dropoff begins at 40m
+Scottfield High Velocity,Base,Scottfield,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Small Slot,137,77,60,101,75,355,12,24,1.5,28.1,128,9,6,8,
+Scottfield Incendiary,Base,Scottfield,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Small Slot,117,77,40,107,65,280,9,24,1.5,28.1,128,9,6,12,Ignites Hunters in one shot up to 30m
+Scottfield Precision,Scottfield Precision,Scottfield,Scottfield Scottfield Precision,SingleBulletType,Medium,Default,Medium / Default,Medium Slot,85,85,0,107,65,280,3,27,1,28.1,87,9,6,18,
+Scottfield Precision Dumdum,Scottfield Precision,Scottfield,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Medium Slot,135,85,50,107,60,250,3,27,1,28.1,87,9,6,18,Causes Medium Bleeding
+Scottfield Precision FMJ,Scottfield Precision,Scottfield,,SingleBulletType,Medium,FMJ,Medium / FMJ,Medium Slot,135,85,50,107,60,250,6,27,1,28.1,87,9,6,18,Damage dropoff begins at 40m
+Scottfield Precision High Velocity,Scottfield Precision,Scottfield,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Medium Slot,145,85,60,101,75,355,6,27,1,28.1,87,9,6,14,
+Scottfield Precision Incendiary,Scottfield Precision,Scottfield,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Medium Slot,125,85,40,107,65,280,3,27,1,28.1,87,9,6,18,Ignites Hunters in one shot up to 30m
+Scottfield Spitfire,Spitfire,Scottfield,Scottfield Spitfire,SingleBulletType,Medium,Default,Medium / Default,Small Slot,108,108,0,107,60,280,12,30,0.8,36,128,9,6,12,
+Scottfield Spitfire Dumdum,Spitfire,Scottfield,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Small Slot,158,108,50,107,55,250,12,30,0.8,36,128,9,6,12,Causes Medium Bleeding
+Scottfield Spitfire FMJ,Spitfire,Scottfield,,SingleBulletType,Medium,FMJ,Medium / FMJ,Small Slot,158,108,50,107,55,250,16,30,0.8,36,128,9,6,12,Damage dropoff begins at 40m
+Scottfield Spitfire High Velocity,Spitfire,Scottfield,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Small Slot,168,108,60,101,70,355,16,30,0.8,36,128,9,6,8,
+Scottfield Spitfire Incendiary,Spitfire,Scottfield,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Small Slot,148,108,40,107,60,280,12,30,0.8,36,128,9,6,12,Ignites Hunters in one shot up to 30m
+Scottfield Swift,Swift,Scottfield,Scottfield Swift,SingleBulletType,Medium,Default,Medium / Default,Small Slot,95,95,0,107,65,280,9,30,1.5,28.1,128,4.3,6,12,
+Scottfield Swift Dumdum,Swift,Scottfield,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Small Slot,145,95,50,107,60,250,9,30,1.5,28.1,128,4.3,6,12,Causes Medium Bleeding
+Scottfield Swift FMJ,Swift,Scottfield,,SingleBulletType,Medium,FMJ,Medium / FMJ,Small Slot,145,95,50,107,60,250,12,30,1.5,28.1,128,4.3,6,12,Damage dropoff begins at 40m
+Scottfield Swift High Velocity,Swift,Scottfield,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Small Slot,155,95,60,101,75,355,12,30,1.5,28.1,128,4.3,6,8,
+Scottfield Swift Incendiary,Swift,Scottfield,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Small Slot,135,95,40,107,65,280,9,30,1.5,28.1,128,4.3,6,12,Ignites Hunters in one shot up to 30m
+Slate,Base,Slate,Slate,SingleShellType,Shells,Default,Shells / Default,Large Slot,333,333,0,207,25,425,26,23,1,30,77,9.6,6,6,
+Slate Penny Shot,Base,Slate,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,343,333,10,182,25,425,26,23,1,80,77,9.6,6,9,
+Slate Riposte,Riposte,Slate,Slate Riposte,SingleShellType,Shells,Default,Shells / Default,Large Slot,343,343,0,207,25,425,26,23,1,30,77,9.6,6,6,
+Slate Riposte Penny Shot,Riposte,Slate,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,353,343,10,182,25,425,26,23,1,80,77,9.6,6,9,
+Slate Riposte Slug,Riposte,Slate,,SingleShellType,Shells,Slug,Shells / Slug,Large Slot,473,343,130,165,25,425,26,23,1,80,77,9.6,6,4,
+Slate Slug,Base,Slate,,SingleShellType,Shells,Slug,Shells / Slug,Large Slot,463,333,130,165,25,425,26,23,1,80,77,9.6,6,4,
+Sparks,Base,Sparks,Sparks,TwoBulletType,Long,Default,Long / Default,Large Slot,130,130,0,149,145,533,10,13,4.9,30,77,4,1,8,
+Sparks FMJ,Base,Sparks,,TwoBulletType,Long,FMJ,Long / FMJ,Large Slot,160,130,30,149,125,370,13,13,4.9,30,77,4,1,8,Damage dropoff begins at 50m
+Sparks Incendiary,Base,Sparks,,TwoBulletType,Long,Incendiary,Long / Incendiary,Large Slot,165,130,35,149,145,533,10,13,4.9,30,77,4,1,8,Ignites Hunters in one shot up to 40m
+Sparks Pistol,Pistol,Sparks,Sparks Pistol,TwoBulletType,Long,Default,Long / Default,Small Slot,155,155,0,149,95,453,25,15,4.2,42.5,128,3.4,1,7,
+Sparks Pistol FMJ,Pistol,Sparks,,TwoBulletType,Long,FMJ,Long / FMJ,Small Slot,185,155,30,149,85,362,27,15,4.2,42.5,128,3.4,1,7,Damage dropoff begins at 50m
+Sparks Pistol Incendiary,Pistol,Sparks,,TwoBulletType,Long,Incendiary,Long / Incendiary,Small Slot,190,155,35,149,95,453,25,15,4.2,42.5,128,3.4,1,7,Ignites Hunters in one shot up to 40m
+Sparks Pistol Poison,Pistol,Sparks,,TwoBulletType,Long,Poison,Long / Poison,Small Slot,185,155,30,149,95,453,25,15,4.2,42.5,128,3.4,1,7,Causes Intense Poison
+Sparks Pistol Silencer,Silencer,Sparks,Sparks Silencer,TwoBulletType,Long,Default,Long / Default,Small Slot,178,178,0,133,85,385,25,15,4.2,42.5,128,3.4,1,7,
+Sparks Pistol Silencer FMJ,Silencer,Sparks,,TwoBulletType,Long,FMJ,Long / FMJ,Small Slot,208,178,30,133,80,308,28,15,4.2,42.5,128,3.4,1,7,Damage dropoff begins at 50m
+Sparks Pistol Silencer Incendiary,Silencer,Sparks,,TwoBulletType,Long,Incendiary,Long / Incendiary,Small Slot,213,178,35,133,85,385,25,15,4.2,42.5,128,3.4,1,7,Ignites Hunters in one shot up to 40m
+Sparks Pistol Silencer Poison,Silencer,Sparks,,TwoBulletType,Long,Poison,Long / Poison,Small Slot,208,178,30,133,85,385,25,15,4.2,42.5,128,3.4,1,7,Causes Intense Poison
+Sparks Pistol Silencer Subsonic,Silencer,Sparks,,TwoBulletType,Long,Subsonic,Long / Subsonic,Small Slot,188,178,10,133,75,258,25,15,4.2,42.5,128,3.4,1,8,Reduced Sound
+Sparks Pistol Subsonic,Pistol,Sparks,,TwoBulletType,Long,Subsonic,Long / Subsonic,Small Slot,165,155,10,149,75,281,25,15,4.2,42.5,128,3.4,1,8,Reduced Sound
+Sparks Poison,Base,Sparks,,TwoBulletType,Long,Poison,Long / Poison,Large Slot,160,130,30,149,145,533,10,13,4.9,30,77,4,1,8,Causes Intense Poison
+Sparks Silencer,Silencer,Sparks,Sparks Silencer,TwoBulletType,Long,Default,Long / Default,Large Slot,150,150,0,133,110,453,10,13,4.9,47.5,87,4,1,8,
+Sparks Silencer FMJ,Silencer,Sparks,,TwoBulletType,Long,FMJ,Long / FMJ,Large Slot,180,178,2,133,95,362,13,13,4.9,47.5,87,4,1,8,Damage dropoff begins at 50m
+Sparks Silencer Incendiary,Silencer,Sparks,,TwoBulletType,Long,Incendiary,Long / Incendiary,Large Slot,185,178,7,133,110,453,10,13,4.9,47.5,87,4,1,8,Ignites Hunters in one shot up to 40m
+Sparks Silencer Poison,Silencer,Sparks,,TwoBulletType,Long,Poison,Long / Poison,Large Slot,180,178,2,133,110,453,10,13,4.9,47.5,87,4,1,8,Causes Intense Poison
+Sparks Silencer Subsonic,Silencer,Sparks,,TwoBulletType,Long,Subsonic,Long / Subsonic,Large Slot,160,178,10,133,85,281,10,13,4.9,47.5,87,4,1,9,Reduced Sound
+Sparks Sniper,Sniper,Sparks,Sparks Sniper,TwoBulletType,Long,Default,Long / Default,Large Slot,150,150,0,149,145,533,10,13,4.9,55,69,4,1,8,
+Sparks Sniper FMJ,Sniper,Sparks,,TwoBulletType,Long,FMJ,Long / FMJ,Large Slot,180,150,30,149,125,370,13,13,4.9,55,69,4,1,8,Damage dropoff begins at 50m
+Sparks Sniper Incendiary,Sniper,Sparks,,TwoBulletType,Long,Incendiary,Long / Incendiary,Large Slot,185,150,35,149,145,533,10,13,4.9,55,69,4,1,8,Ignites Hunters in one shot up to 40m
+Sparks Sniper Poison,Sniper,Sparks,,TwoBulletType,Long,Poison,Long / Poison,Large Slot,180,150,30,149,145,533,10,13,4.9,55,69,4,1,8,Causes Intense Poison
+Sparks Sniper Subsonic,Sniper,Sparks,,TwoBulletType,Long,Subsonic,Long / Subsonic,Large Slot,160,150,10,149,115,309,10,13,4.9,55,69,4,1,9,Reduced Sound
+Sparks Subsonic,Base,Sparks,,TwoBulletType,Long,Subsonic,Long / Subsonic,Large Slot,140,130,10,149,115,309,10,13,4.9,30,77,4,1,9,Reduced Sound
+Specter 1882,Base,Specter,Specter,SingleShellType,Shells,Default,Shells / Default,Large Slot,188,188,0,213,30,425,20,20,1,25,77,14.8,5,10,
+Specter 1882 Bayonet,Bayonet,Specter,Specter Bayonet,SingleShellType,Shells,Default,Shells / Default,Large Slot,198,198,0,204,25,400,20,20,1,35,77,14.8,5,10,
+Specter 1882 Bayonet Dragon Breath,Bayonet,Specter,,SingleShellType,Shells,Dragon Breath,Shells / Dragon Breath,Large Slot,218,198,20,133,25,100,20,20,1,75,77,14.8,5,10,Causes Medium Burning
+Specter 1882 Bayonet Flechette,Bayonet,Specter,,SingleShellType,Shells,Flechette,Shells / Flechette,Large Slot,238,198,40,142,25,400,20,20,1,25,77,14.8,5,10,Causes Medium Bleeding
+Specter 1882 Bayonet Penny Shot,Bayonet,Specter,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,208,198,10,155,25,400,20,20,1,95,77,14.8,5,15,
+Specter 1882 Bayonet Slug,Bayonet,Specter,,SingleShellType,Shells,Slug,Shells / Slug,Large Slot,328,198,130,165,25,400,20,20,1,90,77,14.8,5,6,
+Specter 1882 Dragon Breath,Base,Specter,,SingleShellType,Shells,Dragon Breath,Shells / Dragon Breath,Large Slot,208,188,20,141,30,100,20,20,1,60,77,14.8,5,10,Causes Medium Burning
+Specter 1882 Flechette,Base,Specter,,SingleShellType,Shells,Flechette,Shells / Flechette,Large Slot,228,188,40,138,30,425,20,20,1,25,77,14.8,5,10,Causes Medium Bleeding
+Specter 1882 Penny Shot,Base,Specter,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,198,188,10,193,30,425,20,20,1,75,77,14.8,5,15,
+Specter 1882 Shorty,Shorty,Specter,Specter Shorty,SingleShellType,Shells,Default,Shells / Default,Medium Slot,164,164,0,178,20,350,25,19,1.2,45,87,11.1,4,8,
+Specter 1882 Shorty Dragon Breath,Shorty,Specter,,SingleShellType,Shells,Dragon Breath,Shells / Dragon Breath,Medium Slot,184,164,20,92,20,100,25,19,1.2,145,87,11.1,4,8,Causes Medium Burning
+Specter 1882 Shorty Flechette,Shorty,Specter,,SingleShellType,Shells,Flechette,Shells / Flechette,Medium Slot,204,164,40,123,20,350,25,19,1.2,45,87,11.1,4,8,Causes Medium Bleeding
+Specter 1882 Shorty Penny Shot,Shorty,Specter,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Medium Slot,174,164,10,81,20,350,25,19,1.2,120,87,11.1,4,12,
+Specter 1882 Shorty Slug,Shorty,Specter,,SingleShellType,Shells,Slug,Shells / Slug,Medium Slot,294,164,130,157,20,350,25,19,1.2,120,87,11.1,4,5,
+Specter 1882 Slug,Base,Specter,,SingleShellType,Shells,Slug,Shells / Slug,Large Slot,318,188,130,179,30,425,20,20,1,75,77,14.8,5,6,
+Springfield 1866,Base,Springfield,Springfield,TwoBulletType,Medium,Default,Medium / Default,Large Slot,38,38,0,132,160,490,6,19,3.3,20,77,3,1,12,
+Springfield 1866 Bayonet,Bayonet,Springfield,Springfield Bayonet,TwoBulletType,Medium,Default,Medium / Default,Large Slot,48,48,0,132,160,490,6,19,3.3,20,77,3,1,12,
+Springfield 1866 Bayonet Dumdum,Bayonet,Springfield,,TwoBulletType,Medium,Dumdum,Medium / Dumdum,Large Slot,73,48,25,132,155,440,6,19,3.3,20,77,3,1,12,Causes Intense Bleeding
+Springfield 1866 Bayonet Explosive,Bayonet,Springfield,,TwoBulletType,Medium,Explosive,Medium / Explosive,Large Slot,93,48,45,123,120,370,6,19,3.3,20,77,3,1,12,
+Springfield 1866 Bayonet High Velocity,Bayonet,Springfield,,TwoBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,78,48,30,126,180,615,10,19,3.3,20,77,3,1,8,
+Springfield 1866 Bayonet Poison,Bayonet,Springfield,,TwoBulletType,Medium,Poison,Medium / Poison,Large Slot,73,48,25,132,160,490,6,19,3.3,20,77,3,1,12,Causes Medium Poison
+Springfield 1866 Bullseye,Bullseye,Springfield,Springfield Bullseye,TwoBulletType,Medium,Default,Medium / Default,Medium Slot,35,35,0,130,120,440,12,19,3.3,55,93,3,1,12,
+Springfield 1866 Bullseye Dumdum,Bullseye,Springfield,,TwoBulletType,Medium,Dumdum,Medium / Dumdum,Medium Slot,60,35,25,130,110,390,12,19,3.3,55,93,3,1,12,Causes Intense Bleeding
+Springfield 1866 Bullseye Explosive,Bullseye,Springfield,,TwoBulletType,Medium,Explosive,Medium / Explosive,Medium Slot,80,35,45,123,80,330,12,19,3.3,55,93,3,1,12,
+Springfield 1866 Bullseye High Velocity,Bullseye,Springfield,,TwoBulletType,Medium,High Velocity,Medium / High Velocity,Medium Slot,65,35,30,123,130,515,16,19,3.3,55,93,3,1,8,
+Springfield 1866 Bullseye Poison,Bullseye,Springfield,,TwoBulletType,Medium,Poison,Medium / Poison,Medium Slot,60,35,25,130,120,440,12,19,3.3,55,93,3,1,12,Causes Medium Poison
+Springfield 1866 Dumdum,Base,Springfield,,TwoBulletType,Medium,Dumdum,Medium / Dumdum,Large Slot,63,38,25,132,155,440,6,19,3.3,20,77,3,1,12,Causes Intense Bleeding
+Springfield 1866 Explosive,Base,Springfield,,TwoBulletType,Medium,Explosive,Medium / Explosive,Large Slot,83,38,45,123,120,370,6,19,3.3,20,77,3,1,12,
+Springfield 1866 High Velocity,Base,Springfield,,TwoBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,68,38,30,126,180,615,10,19,3.3,20,77,3,1,8,
+Springfield 1866 Marksman,Marksman,Springfield,Springfield Marksman,TwoBulletType,Medium,Default,Medium / Default,Large Slot,42,42,0,132,160,490,6,19,3.3,37.5,69,3,1,12,
+Springfield 1866 Marksman Dumdum,Marksman,Springfield,,TwoBulletType,Medium,Dumdum,Medium / Dumdum,Large Slot,67,42,25,132,155,440,6,19,3.3,37.5,69,3,1,12,Causes Intense Bleeding
+Springfield 1866 Marksman Explosive,Marksman,Springfield,,TwoBulletType,Medium,Explosive,Medium / Explosive,Large Slot,87,42,45,123,120,370,6,19,3.3,37.5,69,3,1,12,
+Springfield 1866 Marksman High Velocity,Marksman,Springfield,,TwoBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,72,42,30,126,180,615,10,19,3.3,37.5,69,3,1,8,
+Springfield 1866 Marksman Poison,Marksman,Springfield,,TwoBulletType,Medium,Poison,Medium / Poison,Large Slot,67,42,25,132,160,490,6,19,3.3,37.5,69,3,1,12,Causes Medium Poison
+Springfield 1866 Poison,Base,Springfield,,TwoBulletType,Medium,Poison,Medium / Poison,Large Slot,63,38,25,132,160,490,6,19,3.3,20,77,3,1,12,Causes Medium Poison
+Springfield 1866 Shorty,Shorty,Springfield,Springfield Shorty,TwoBulletType,Medium,Default,Medium / Default,Medium Slot,33,33,0,130,120,440,12,19,3.3,40,100,3,1,12,
+Springfield 1866 Shorty Dumdum,Shorty,Springfield,,TwoBulletType,Medium,Dumdum,Medium / Dumdum,Medium Slot,58,33,25,130,110,390,12,19,3.3,40,100,3,1,12,Causes Intense Bleeding
+Springfield 1866 Shorty Explosive,Shorty,Springfield,,TwoBulletType,Medium,Explosive,Medium / Explosive,Medium Slot,78,33,45,123,80,330,12,19,3.3,40,100,3,1,12,
+Springfield 1866 Shorty High Velocity,Shorty,Springfield,,TwoBulletType,Medium,High Velocity,Medium / High Velocity,Medium Slot,63,33,30,123,130,515,16,19,3.3,40,100,3,1,8,
+Springfield 1866 Shorty Poison,Shorty,Springfield,,TwoBulletType,Medium,Poison,Medium / Poison,Medium Slot,58,33,25,130,120,440,12,19,3.3,40,100,3,1,12,Causes Medium Poison
+Springfield 1866 Striker,Striker,Springfield,Springfield Striker,TwoBulletType,Medium,Default,Medium / Default,Medium Slot,43,43,0,130,120,440,12,19,3.3,40,100,3,1,12,
+Springfield 1866 Striker Dumdum,Striker,Springfield,,TwoBulletType,Medium,Dumdum,Medium / Dumdum,Medium Slot,68,43,25,130,110,390,12,19,3.3,40,100,3,1,12,Causes Intense Bleeding
+Springfield 1866 Striker Explosive,Striker,Springfield,,TwoBulletType,Medium,Explosive,Medium / Explosive,Medium Slot,88,43,45,123,80,330,12,19,3.3,40,100,3,1,12,
+Springfield 1866 Striker High Velocity,Striker,Springfield,,TwoBulletType,Medium,High Velocity,Medium / High Velocity,Medium Slot,73,43,30,123,130,515,16,19,3.3,40,100,3,1,8,
+Springfield 1866 Striker Poison,Striker,Springfield,,TwoBulletType,Medium,Poison,Medium / Poison,Medium Slot,68,43,25,130,120,440,12,19,3.3,40,100,3,1,12,Causes Medium Poison
+Terminus,Base,Terminus,Terminus,SingleShellType,Shells,Default,Shells / Default,Large Slot,238,238,0,186,25,425,22,21,1.6,40,77,12.2,7,8,
+Terminus Dragon Breath,Base,Terminus,,SingleShellType,Shells,Dragon Breath,Shells / Dragon Breath,Large Slot,258,238,20,118,25,100,22,21,1.6,85,77,12.2,7,8,Causes Medium Burning
+Terminus Flechette,Base,Terminus,,SingleShellType,Shells,Flechette,Shells / Flechette,Large Slot,278,238,40,127,25,425,22,21,1.6,30,77,12.2,7,8,Causes Medium Bleeding
+Terminus Penny Shot,Base,Terminus,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Large Slot,248,238,10,183,25,425,22,21,1.6,80,77,12.2,7,12,
+Terminus Shorty,Shorty,Terminus,Terminus Shorty,SingleShellType,Shells,Default,Shells / Default,Medium Slot,218,218,0,168,20,350,27,19,1.6,50,133,10.6,6,6,
+Terminus Shorty Dragon Breath,Shorty,Terminus,,SingleShellType,Shells,Dragon Breath,Shells / Dragon Breath,Medium Slot,238,218,20,77,20,100,27,19,1.6,150,133,10.6,6,6,Causes Medium Burning
+Terminus Shorty Flechette,Shorty,Terminus,,SingleShellType,Shells,Flechette,Shells / Flechette,Medium Slot,258,218,40,114,20,350,27,19,1.6,35,133,10.6,6,6,Causes Medium Bleeding
+Terminus Shorty Penny Shot,Shorty,Terminus,,SingleShellType,Shells,Penny Shot,Shells / Penny Shot,Medium Slot,228,218,10,75,20,350,27,19,1.6,115,133,10.6,6,9,
+Terminus Shorty Slug,Shorty,Terminus,,SingleShellType,Shells,Slug,Shells / Slug,Medium Slot,348,218,130,157,20,350,27,19,1.6,125,133,10.6,6,4,
+Terminus Slug,Base,Terminus,,SingleShellType,Shells,Slug,Shells / Slug,Large Slot,368,238,130,165,25,425,22,21,1.6,75,77,12.2,7,5,
+Uppercut,Base,Uppercut,Uppercut,SingleBulletType,Long,Default,Long / Default,Small Slot,310,310,0,123,65,410,23,18,1.6,40,128,16,6,9,
+Uppercut Deadeye,Deadeye,Uppercut,Uppercut Deadeye,SingleBulletType,Long,Default,Long / Default,Medium Slot,337,337,0,123,65,410,14,18,1.4,40,87,18.3,6,15,
+Uppercut Deadeye Explosive,Deadeye,Uppercut,,SingleBulletType,Long,Explosive,Long / Explosive,Medium Slot,437,337,100,99,40,330,14,18,1.4,40,87,18.3,6,15,
+Uppercut Deadeye FMJ,Deadeye,Uppercut,,SingleBulletType,Long,FMJ,Long / FMJ,Medium Slot,397,337,60,123,55,360,16,18,1.4,40,87,18.3,6,15,Damage dropoff begins at 50m
+Uppercut Deadeye Incendiary,Deadeye,Uppercut,,SingleBulletType,Long,Incendiary,Long / Incendiary,Medium Slot,407,337,70,123,65,410,14,18,1.4,40,87,18.3,6,15,Ignites Hunters in one shot up to 40m
+Uppercut Explosive,Base,Uppercut,,SingleBulletType,Long,Explosive,Long / Explosive,Small Slot,410,310,100,99,40,330,23,18,1.6,40,128,16,6,9,
+Uppercut FMJ,Base,Uppercut,,SingleBulletType,Long,FMJ,Long / FMJ,Small Slot,370,310,60,123,55,360,25,18,1.6,40,128,16,6,9,Damage dropoff begins at 50m
+Uppercut Incendiary,Base,Uppercut,,SingleBulletType,Long,Incendiary,Long / Incendiary,Small Slot,380,310,70,123,65,410,23,18,1.6,40,128,16,6,9,Ignites Hunters in one shot up to 40m
+Uppercut Precision,Precision,Uppercut,Uppercut Precision,SingleBulletType,Long,Default,Long / Default,Medium Slot,321,321,0,123,65,410,11,18,1.4,35,87,18.3,6,15,
+Uppercut Precision Explosive,Precision,Uppercut,,SingleBulletType,Long,Explosive,Long / Explosive,Medium Slot,421,321,100,99,40,330,11,18,1.4,35,87,18.3,6,15,
+Uppercut Precision FMJ,Precision,Uppercut,,SingleBulletType,Long,FMJ,Long / FMJ,Medium Slot,381,321,60,123,55,360,13,18,1.4,35,87,18.3,6,15,Damage dropoff begins at 50m
+Uppercut Precision Incendiary,Precision,Uppercut,,SingleBulletType,Long,Incendiary,Long / Incendiary,Medium Slot,391,321,70,123,65,410,11,18,1.4,35,87,18.3,6,15,Ignites Hunters in one shot up to 40m
+Vandal 73C,Base,Vandal,Vandal,SingleBulletType,Compact,Default,Compact / Default,Medium Slot,35,35,0,107,120,370,8,28,1.2,25,100,9.4,7,28,
+Vandal 73C Bullseye,Bullseye,Vandal,Vandal Bullseye,SingleBulletType,Compact,Default,Compact / Default,Medium Slot,37,37,0,107,120,370,8,28,1.2,35,93,9.4,7,28,
+Vandal 73C Bullseye FMJ,Bullseye,Vandal,,SingleBulletType,Compact,FMJ,Compact / FMJ,Medium Slot,87,37,50,107,110,310,11,28,1.2,35,93,9.4,7,28,Damage dropoff begins at 30m
+Vandal 73C Bullseye High Velocity,Bullseye,Vandal,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Medium Slot,97,37,60,101,145,470,12,28,1.2,35,93,9.4,7,18,
+Vandal 73C Bullseye Incendiary,Bullseye,Vandal,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Medium Slot,77,37,40,107,120,370,8,28,1.2,35,93,9.4,7,28,Ignites Hunters in one shot up to 20m
+Vandal 73C Bullseye Poison,Bullseye,Vandal,,SingleBulletType,Compact,Poison,Compact / Poison,Medium Slot,87,37,50,107,120,370,8,28,1.2,35,93,9.4,7,28,Causes Medium Poison
+Vandal 73C Bullseye Subsonic,Bullseye,Vandal,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Medium Slot,42,37,5,107,95,252,8,28,1.2,35,93,9.4,7,34,Reduced Sound
+Vandal 73C FMJ,Base,Vandal,,SingleBulletType,Compact,FMJ,Compact / FMJ,Medium Slot,85,35,50,107,110,310,11,28,1.2,25,100,9.4,7,28,Damage dropoff begins at 30m
+Vandal 73C High Velocity,Base,Vandal,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Medium Slot,95,35,60,101,145,470,12,28,1.2,25,100,9.4,7,18,
+Vandal 73C Incendiary,Base,Vandal,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Medium Slot,75,35,40,107,120,370,8,28,1.2,25,100,9.4,7,28,Ignites Hunters in one shot up to 20m
+Vandal 73C Poison,Base,Vandal,,SingleBulletType,Compact,Poison,Compact / Poison,Medium Slot,85,35,50,107,120,370,8,28,1.2,25,100,9.4,7,28,Causes Medium Poison
+Vandal 73C Striker,Striker,Vandal,Vandal Striker,SingleBulletType,Compact,Default,Compact / Default,Medium Slot,45,45,0,107,120,370,8,28,1.3,25,100,9.4,7,28,
+Vandal 73C Striker FMJ,Striker,Vandal,,SingleBulletType,Compact,FMJ,Compact / FMJ,Medium Slot,95,45,50,107,110,310,11,28,1.3,25,100,9.4,7,28,Damage dropoff begins at 30m
+Vandal 73C Striker High Velocity,Striker,Vandal,,SingleBulletType,Compact,High Velocity,Compact / High Velocity,Medium Slot,105,45,60,101,145,470,12,28,1.3,25,100,9.4,7,18,
+Vandal 73C Striker Incendiary,Striker,Vandal,,SingleBulletType,Compact,Incendiary,Compact / Incendiary,Medium Slot,85,45,40,107,120,370,8,28,1.3,25,100,9.4,7,28,Ignites Hunters in one shot up to 20m
+Vandal 73C Striker Poison,Striker,Vandal,,SingleBulletType,Compact,Poison,Compact / Poison,Medium Slot,95,45,50,107,120,370,8,28,1.3,25,100,9.4,7,28,Causes Medium Poison
+Vandal 73C Striker Subsonic,Striker,Vandal,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Medium Slot,50,45,5,107,95,252,8,28,1.3,25,100,9.4,7,34,Reduced Sound
+Vandal 73C Subsonic,Base,Vandal,,SingleBulletType,Compact,Subsonic,Compact / Subsonic,Medium Slot,40,35,5,107,95,252,8,28,1.2,25,100,9.4,7,34,Reduced Sound
+Vetterli 71,Base,Vetterli,Vetterli,SingleBulletType,Medium,Default,Medium / Default,Large Slot,105,105,0,130,125,410,5,24,1.4,22.5,77,12.1,7,20,
+Vetterli 71 Bayonet,Bayonet,Vetterli,Vetterli Bayonet,SingleBulletType,Medium,Default,Medium / Default,Large Slot,115,115,0,130,125,410,5,24,1.4,22.5,77,12.1,7,20,
+Vetterli 71 Bayonet FMJ,Bayonet,Vetterli,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,165,115,50,130,115,350,9,24,1.4,22.5,77,12.1,7,20,Damage dropoff begins at 40m
+Vetterli 71 Bayonet High Velocity,Bayonet,Vetterli,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,175,115,60,123,140,510,9,24,1.4,22.5,77,12.1,7,13,
+Vetterli 71 Bayonet Incendiary,Bayonet,Vetterli,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Large Slot,155,115,40,130,125,410,5,24,1.4,22.5,77,12.1,7,20,Ignites Hunters in one shot up to 20m
+Vetterli 71 Bayonet Subsonic,Bayonet,Vetterli,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,125,115,10,130,100,266,5,24,1.4,22.5,77,12.1,7,24,Reduced Sound
+Vetterli 71 Cyclone,Cyclone,Vetterli,Vetterli Cyclone,SingleBulletType,Medium,Default,Medium / Default,Large Slot,280,280,0,124,105,410,6,27,0.6,47.5,77,8.4,4,20,
+Vetterli 71 Cyclone FMJ,Cyclone,Vetterli,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,330,280,50,124,95,315,12,27,0.6,47.5,77,8.4,4,20,Damage dropoff begins at 40m
+Vetterli 71 Cyclone High Velocity,Cyclone,Vetterli,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,340,280,60,116,120,460,12,27,0.6,47.5,77,8.4,4,13,
+Vetterli 71 Cyclone Incendiary,Cyclone,Vetterli,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Large Slot,320,280,40,124,105,410,6,27,0.6,47.5,77,8.4,4,20,Ignites Hunters in one shot up to 20m
+Vetterli 71 Cyclone Subsonic,Cyclone,Vetterli,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,290,280,10,124,75,240,6,27,0.6,47.5,77,8.4,4,24,Reduced Sound
+Vetterli 71 Deadeye,Deadeye,Vetterli,Vetterli Deadeye,SingleBulletType,Medium,Default,Medium / Default,Large Slot,110,110,0,130,125,410,5,24,1.4,32.5,69,12.1,7,20,
+Vetterli 71 Deadeye FMJ,Deadeye,Vetterli,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,160,110,50,130,115,350,9,24,1.4,32.5,69,12.1,7,20,Damage dropoff begins at 40m
+Vetterli 71 Deadeye High Velocity,Deadeye,Vetterli,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,170,110,60,123,140,510,9,24,1.4,32.5,69,12.1,7,13,
+Vetterli 71 Deadeye Incendiary,Deadeye,Vetterli,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Large Slot,150,110,40,130,125,410,5,24,1.4,32.5,69,12.1,7,20,Ignites Hunters in one shot up to 20m
+Vetterli 71 Deadeye Subsonic,Deadeye,Vetterli,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,120,110,10,130,100,266,5,24,1.4,32.5,69,12.1,7,24,Reduced Sound
+Vetterli 71 FMJ,Base,Vetterli,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,155,105,50,130,115,350,9,24,1.4,22.5,77,12.1,7,20,Damage dropoff begins at 40m
+Vetterli 71 High Velocity,Base,Vetterli,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,165,105,60,123,140,510,9,24,1.4,22.5,77,12.1,7,13,
+Vetterli 71 Incendiary,Base,Vetterli,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Large Slot,145,105,40,130,125,410,5,24,1.4,22.5,77,12.1,7,20,Ignites Hunters in one shot up to 20m
+Vetterli 71 Marksman,Marksman,Vetterli,Vetterli Marksman,SingleBulletType,Medium,Default,Medium / Default,Large Slot,116,116,0,130,125,410,5,24,1.4,42.5,69,12.1,7,20,
+Vetterli 71 Marksman FMJ,Marksman,Vetterli,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,166,116,50,130,115,350,9,24,1.4,42.5,69,12.1,7,20,Damage dropoff begins at 40m
+Vetterli 71 Marksman High Velocity,Marksman,Vetterli,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,176,116,60,123,145,510,9,24,1.4,42.5,69,12.1,7,13,
+Vetterli 71 Marksman Incendiary,Marksman,Vetterli,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Large Slot,156,116,40,130,125,410,5,24,1.4,42.5,69,12.1,7,20,Ignites Hunters in one shot up to 20m
+Vetterli 71 Marksman Subsonic,Marksman,Vetterli,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,126,116,10,130,100,266,5,24,1.4,42.5,69,12.1,7,24,Reduced Sound
+Vetterli 71 Silencer,Silencer,Vetterli,Vetterli Silencer,SingleBulletType,Medium,Default,Medium / Default,Large Slot,150,150,0,123,115,348,5,24,1.4,22.5,77,12.1,7,20,
+Vetterli 71 Silencer FMJ,Silencer,Vetterli,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,200,150,50,123,105,278,9,24,1.4,22.5,77,12.1,7,20,Damage dropoff begins at 40m
+Vetterli 71 Silencer High Velocity,Silencer,Vetterli,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,210,150,60,116,130,448,7,24,1.4,22.5,77,12.1,7,13,
+Vetterli 71 Silencer Incendiary,Silencer,Vetterli,,SingleBulletType,Medium,Incendiary,Medium / Incendiary,Large Slot,190,150,40,123,115,348,5,24,1.4,22.5,77,12.1,7,20,Ignites Hunters in one shot up to 30m
+Vetterli 71 Silencer Subsonic,Silencer,Vetterli,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,160,150,10,123,100,245,5,24,1.4,22.5,77,12.1,7,24,Reduced Sound
+Vetterli 71 Subsonic,Base,Vetterli,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,115,105,10,130,100,266,5,24,1.4,22.5,77,12.1,7,24,Reduced Sound
+Wildland,Base,Wildland,Wildland,SingleBulletType,Medium,Default,Medium / Default,Large Slot,Scarce,-1,0,126,150,650,11,31,1.6,17.5,77,9,16,16,
+Wildland Dumdum,Base,Wildland,,SingleBulletType,Medium,Dumdum,Medium / Dumdum,Large Slot,Scarce + Scarce,-1,-1,126,130,510,11,31,1.6,17.5,77,9,16,16,Causes Intense Bleeding
+Wildland FMJ,Base,Wildland,,SingleBulletType,Medium,FMJ,Medium / FMJ,Large Slot,Scarce + 50,-1,-1,126,130,510,14,31,1.6,17.5,77,9,16,16,Damage dropoff begins at 40m
+Wildland High Velocity,Base,Wildland,,SingleBulletType,Medium,High Velocity,Medium / High Velocity,Large Slot,Scarce + 60,-1,-1,119,170,775,14,31,1.6,17.5,77,9,16,8,
+Wildland Poison,Base,Wildland,,SingleBulletType,Medium,Poison,Medium / Poison,Large Slot,Scarce + 50,-1,-1,126,150,650,11,31,1.6,17.5,77,9,16,16,Causes Medium Poison
+Wildland Subsonic,Base,Wildland,,SingleBulletType,Medium,Subsonic,Medium / Subsonic,Large Slot,Scarce + 10,-1,-1,126,110,336,11,31,1.6,17.5,77,9,16,18,Reduced Sound
